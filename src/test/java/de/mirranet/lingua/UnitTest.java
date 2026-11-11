@@ -59,10 +59,23 @@ class UnitTest {
         for (String id : List.of("en", "fr")) {
             try (InputStream in = UnitTest.class.getResourceAsStream("/courses/" + id + ".json")) {
                 CourseRepository.Course c = CourseRepository.parse(id, new String(in.readAllBytes(), StandardCharsets.UTF_8));
-                assertEquals(9, c.lessonsPerSkill().size());
+                assertEquals(21, c.lessonsPerSkill().size());
+                assertEquals(3, c.lessonsPerSkill().get("wor"));
                 assertEquals(3, c.lessonsPerSkill().get("g1"));
             }
         }
+    }
+
+    @Test
+    void accuracyBlending() {
+        double[] first = de.mirranet.lingua.progress.ProgressService.blend(0, 0, 8, 10);
+        assertEquals(0.8, first[0], 1e-9);
+        assertEquals(10, (int) first[1]);
+        double[] second = de.mirranet.lingua.progress.ProgressService.blend(0.8, 10, 10, 10);
+        assertEquals(0.8 * 0.65 + 0.35, second[0], 1e-9);
+        assertEquals(20, (int) second[1]);
+        double[] none = de.mirranet.lingua.progress.ProgressService.blend(0.5, 4, 0, 0);
+        assertEquals(0.5, none[0], 1e-9);
     }
 
     @Test

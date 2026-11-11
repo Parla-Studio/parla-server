@@ -21,6 +21,7 @@ The server reloads changed files automatically and the app downloads them on its
       "title": "Grundlagen 1",
       "icon": "🥚",
       "row": 0,               // skills in the same row sit side by side; a row unlocks when all rows above are done
+      "level": "A1",          // optional; the app shows a "Stufe A1 · Einstieg" heading where a new level starts
       "color": "#1cb0f6",
       "words": [["man", "Mann"], ["woman", "Frau"]],
       "sentences": [

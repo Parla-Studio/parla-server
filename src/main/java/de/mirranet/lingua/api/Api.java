@@ -42,6 +42,7 @@ import java.util.regex.Pattern;
  * GET    /api/courses                                               -> {hash, courses:[{id,name,flag,version,hash}]}
  * GET    /api/courses/{id}                                          -> course document (ETag = hash)
  * GET    /api/progress                                              -> {courses, xp, serverTime}
+ *        (per skill: lessons, lastPracticed, reps, accuracy 0..1, answers)
  * POST   /api/progress/events    {events:[...]}                     -> {applied, duplicates, rejected, progress}
  * </pre>
  */

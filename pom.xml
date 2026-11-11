@@ -6,7 +6,7 @@
 
     <groupId>de.mirranet</groupId>
     <artifactId>mirra-lingua-server</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <packaging>jar</packaging>
     <name>MirraLingua Server</name>
     <description>Backend for the MirraLingua language learning app: accounts, course content and progress sync.</description>

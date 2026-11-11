@@ -1,6 +1,6 @@
 {
  "id": "fr",
- "version": 1,
+ "version": 2,
  "name": "Französisch",
  "flag": "🇫🇷",
  "tts": "fr-FR",
@@ -26,6 +26,7 @@
    "title": "Grundlagen 1",
    "icon": "🥚",
    "row": 0,
+   "level": "A1",
    "color": "#1cb0f6",
    "words": [
     [
@@ -165,6 +166,7 @@
    "title": "Grundlagen 2",
    "icon": "📖",
    "row": 1,
+   "level": "A1",
    "color": "#ce82ff",
    "words": [
     [
@@ -296,6 +298,7 @@
    "title": "Begrüßungen",
    "icon": "👋",
    "row": 1,
+   "level": "A1",
    "color": "#ff9600",
    "words": [
     [
@@ -435,6 +438,7 @@
    "title": "Essen",
    "icon": "🍎",
    "row": 2,
+   "level": "A1",
    "color": "#ff4b4b",
    "words": [
     [
@@ -559,6 +563,7 @@
    "title": "Tiere",
    "icon": "🐶",
    "row": 2,
+   "level": "A1",
    "color": "#78c800",
    "words": [
     [
@@ -687,6 +692,7 @@
    "title": "Plural",
    "icon": "👥",
    "row": 3,
+   "level": "A1",
    "color": "#2b70c9",
    "words": [
     [
@@ -807,6 +813,7 @@
    "title": "Familie",
    "icon": "👪",
    "row": 4,
+   "level": "A1",
    "color": "#ff86d0",
    "words": [
     [
@@ -926,6 +933,7 @@
    "title": "Adjektive",
    "icon": "🎨",
    "row": 4,
+   "level": "A1",
    "color": "#00cd9c",
    "words": [
     [
@@ -1043,6 +1051,7 @@
    "title": "Verben: Präsens",
    "icon": "🏃",
    "row": 5,
+   "level": "A1",
    "color": "#ff9600",
    "words": [
     [
@@ -1158,6 +1167,1734 @@
      ]
     }
    ]
+  },
+  {
+   "id": "num",
+   "title": "Zahlen",
+   "icon": "🔢",
+   "row": 6,
+   "level": "A1",
+   "color": "#1cb0f6",
+   "words": [
+    [
+     "un",
+     "eins"
+    ],
+    [
+     "deux",
+     "zwei"
+    ],
+    [
+     "trois",
+     "drei"
+    ],
+    [
+     "quatre",
+     "vier"
+    ],
+    [
+     "cinq",
+     "fünf"
+    ],
+    [
+     "dix",
+     "zehn"
+    ],
+    [
+     "vingt",
+     "zwanzig"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Nous avons trois chats."
+     ],
+     "de": [
+      "Wir haben drei Katzen."
+     ]
+    },
+    {
+     "t": [
+      "Elle a deux sœurs."
+     ],
+     "de": [
+      "Sie hat zwei Schwestern."
+     ]
+    },
+    {
+     "t": [
+      "Il mange quatre pommes."
+     ],
+     "de": [
+      "Er isst vier Äpfel."
+     ]
+    },
+    {
+     "t": [
+      "Cinq hommes boivent de l'eau."
+     ],
+     "de": [
+      "Fünf Männer trinken Wasser."
+     ]
+    },
+    {
+     "t": [
+      "J'ai vingt ans."
+     ],
+     "de": [
+      "Ich bin zwanzig Jahre alt.",
+      "Ich bin zwanzig."
+     ]
+    },
+    {
+     "t": [
+      "Le garçon a dix ans."
+     ],
+     "de": [
+      "Der Junge ist zehn Jahre alt.",
+      "Der Junge ist zehn."
+     ]
+    },
+    {
+     "t": [
+      "Quel âge as-tu ?",
+      "Tu as quel âge ?"
+     ],
+     "de": [
+      "Wie alt bist du?"
+     ]
+    },
+    {
+     "t": [
+      "J'ai six livres."
+     ],
+     "de": [
+      "Ich habe sechs Bücher."
+     ]
+    },
+    {
+     "t": [
+      "Une semaine a sept jours."
+     ],
+     "de": [
+      "Eine Woche hat sieben Tage."
+     ]
+    },
+    {
+     "t": [
+      "Nous avons besoin de huit œufs."
+     ],
+     "de": [
+      "Wir brauchen acht Eier."
+     ]
+    },
+    {
+     "t": [
+      "Mon père a cinquante ans."
+     ],
+     "de": [
+      "Mein Vater ist fünfzig Jahre alt.",
+      "Mein Vater ist fünfzig."
+     ]
+    },
+    {
+     "t": [
+      "J'ai un chien et deux chats."
+     ],
+     "de": [
+      "Ich habe einen Hund und zwei Katzen."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "col",
+   "title": "Farben & Kleidung",
+   "icon": "👕",
+   "row": 6,
+   "level": "A1",
+   "color": "#ce82ff",
+   "words": [
+    [
+     "chemise",
+     "Hemd"
+    ],
+    [
+     "robe",
+     "Kleid"
+    ],
+    [
+     "chaussures",
+     "Schuhe"
+    ],
+    [
+     "bleu",
+     "blau"
+    ],
+    [
+     "vert",
+     "grün"
+    ],
+    [
+     "noir",
+     "schwarz"
+    ],
+    [
+     "blanc",
+     "weiß"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "La chemise est bleue."
+     ],
+     "de": [
+      "Das Hemd ist blau."
+     ]
+    },
+    {
+     "t": [
+      "Elle porte une robe rouge."
+     ],
+     "de": [
+      "Sie trägt ein rotes Kleid."
+     ]
+    },
+    {
+     "t": [
+      "Mes chaussures sont noires."
+     ],
+     "de": [
+      "Meine Schuhe sind schwarz."
+     ]
+    },
+    {
+     "t": [
+      "Le chat est blanc."
+     ],
+     "de": [
+      "Die Katze ist weiß.",
+      "Der Kater ist weiß."
+     ]
+    },
+    {
+     "t": [
+      "J'ai une chemise verte."
+     ],
+     "de": [
+      "Ich habe ein grünes Hemd."
+     ]
+    },
+    {
+     "t": [
+      "Il porte des chaussures noires."
+     ],
+     "de": [
+      "Er trägt schwarze Schuhe."
+     ]
+    },
+    {
+     "t": [
+      "La robe est nouvelle."
+     ],
+     "de": [
+      "Das Kleid ist neu."
+     ]
+    },
+    {
+     "t": [
+      "De quelle couleur est la voiture ?"
+     ],
+     "de": [
+      "Welche Farbe hat das Auto?"
+     ]
+    },
+    {
+     "t": [
+      "La voiture est jaune."
+     ],
+     "de": [
+      "Das Auto ist gelb."
+     ]
+    },
+    {
+     "t": [
+      "J'aime la robe bleue."
+     ],
+     "de": [
+      "Mir gefällt das blaue Kleid.",
+      "Ich mag das blaue Kleid."
+     ]
+    },
+    {
+     "t": [
+      "Le garçon porte une chemise blanche."
+     ],
+     "de": [
+      "Der Junge trägt ein weißes Hemd."
+     ]
+    },
+    {
+     "t": [
+      "Sa veste est verte."
+     ],
+     "de": [
+      "Ihre Jacke ist grün.",
+      "Seine Jacke ist grün."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tim",
+   "title": "Zeit & Tage",
+   "icon": "⏰",
+   "row": 7,
+   "level": "A1",
+   "color": "#ff9600",
+   "words": [
+    [
+     "aujourd'hui",
+     "heute"
+    ],
+    [
+     "hier",
+     "gestern"
+    ],
+    [
+     "lundi",
+     "Montag"
+    ],
+    [
+     "vendredi",
+     "Freitag"
+    ],
+    [
+     "semaine",
+     "Woche"
+    ],
+    [
+     "heure",
+     "Stunde"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Aujourd'hui, c'est lundi.",
+      "Aujourd'hui c'est lundi.",
+      "Nous sommes lundi."
+     ],
+     "de": [
+      "Heute ist Montag."
+     ]
+    },
+    {
+     "t": [
+      "Demain, c'est vendredi.",
+      "Demain c'est vendredi."
+     ],
+     "de": [
+      "Morgen ist Freitag."
+     ]
+    },
+    {
+     "t": [
+      "Hier, c'était dimanche.",
+      "Hier c'était dimanche."
+     ],
+     "de": [
+      "Gestern war Sonntag."
+     ]
+    },
+    {
+     "t": [
+      "Quelle heure est-il ?"
+     ],
+     "de": [
+      "Wie spät ist es?",
+      "Wie viel Uhr ist es?"
+     ]
+    },
+    {
+     "t": [
+      "Il est trois heures."
+     ],
+     "de": [
+      "Es ist drei Uhr."
+     ]
+    },
+    {
+     "t": [
+      "Je travaille le lundi.",
+      "Je travaille lundi."
+     ],
+     "de": [
+      "Ich arbeite am Montag.",
+      "Ich arbeite montags."
+     ]
+    },
+    {
+     "t": [
+      "Nous mangeons à sept heures."
+     ],
+     "de": [
+      "Wir essen um sieben Uhr.",
+      "Wir essen um sieben."
+     ]
+    },
+    {
+     "t": [
+      "La semaine a sept jours."
+     ],
+     "de": [
+      "Die Woche hat sieben Tage."
+     ]
+    },
+    {
+     "t": [
+      "Je lis pendant une heure."
+     ],
+     "de": [
+      "Ich lese eine Stunde.",
+      "Ich lese eine Stunde lang."
+     ]
+    },
+    {
+     "t": [
+      "À vendredi !"
+     ],
+     "de": [
+      "Bis Freitag!"
+     ]
+    },
+    {
+     "t": [
+      "Le matin, je bois du café.",
+      "Le matin je bois du café."
+     ],
+     "de": [
+      "Am Morgen trinke ich Kaffee.",
+      "Morgens trinke ich Kaffee."
+     ]
+    },
+    {
+     "t": [
+      "Elle travaille tous les jours."
+     ],
+     "de": [
+      "Sie arbeitet jeden Tag."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wea",
+   "title": "Wetter",
+   "icon": "☀️",
+   "row": 8,
+   "level": "A2",
+   "color": "#00cd9c",
+   "words": [
+    [
+     "soleil",
+     "Sonne"
+    ],
+    [
+     "pluie",
+     "Regen"
+    ],
+    [
+     "froid",
+     "kalt"
+    ],
+    [
+     "chaud",
+     "heiß"
+    ],
+    [
+     "neige",
+     "Schnee"
+    ],
+    [
+     "vent",
+     "Wind"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Il fait froid aujourd'hui.",
+      "Aujourd'hui, il fait froid."
+     ],
+     "de": [
+      "Heute ist es kalt.",
+      "Es ist heute kalt."
+     ]
+    },
+    {
+     "t": [
+      "Le soleil brille."
+     ],
+     "de": [
+      "Die Sonne scheint."
+     ]
+    },
+    {
+     "t": [
+      "Il pleut."
+     ],
+     "de": [
+      "Es regnet."
+     ]
+    },
+    {
+     "t": [
+      "Il fait très chaud en été."
+     ],
+     "de": [
+      "Im Sommer ist es sehr heiß."
+     ]
+    },
+    {
+     "t": [
+      "Il neige en hiver."
+     ],
+     "de": [
+      "Im Winter schneit es."
+     ]
+    },
+    {
+     "t": [
+      "Le vent est fort."
+     ],
+     "de": [
+      "Der Wind ist stark."
+     ]
+    },
+    {
+     "t": [
+      "Quel temps fait-il ?"
+     ],
+     "de": [
+      "Wie ist das Wetter?"
+     ]
+    },
+    {
+     "t": [
+      "Il fait beau aujourd'hui."
+     ],
+     "de": [
+      "Das Wetter ist heute schön.",
+      "Heute ist das Wetter schön.",
+      "Heute ist es schön."
+     ]
+    },
+    {
+     "t": [
+      "J'ai besoin d'un parapluie parce qu'il pleut."
+     ],
+     "de": [
+      "Ich brauche einen Regenschirm, weil es regnet."
+     ]
+    },
+    {
+     "t": [
+      "Demain, il fera chaud.",
+      "Demain il fera chaud."
+     ],
+     "de": [
+      "Morgen wird es warm.",
+      "Morgen wird es heiß."
+     ]
+    },
+    {
+     "t": [
+      "Au printemps, il fait souvent beau.",
+      "Au printemps il fait souvent beau."
+     ],
+     "de": [
+      "Im Frühling ist das Wetter oft schön.",
+      "Im Frühling ist das Wetter oft gut."
+     ]
+    },
+    {
+     "t": [
+      "Nous restons à la maison quand il neige."
+     ],
+     "de": [
+      "Wir bleiben zu Hause, wenn es schneit.",
+      "Wir bleiben zuhause, wenn es schneit."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cit",
+   "title": "In der Stadt",
+   "icon": "🏙️",
+   "row": 8,
+   "level": "A2",
+   "color": "#2b70c9",
+   "words": [
+    [
+     "rue",
+     "Straße"
+    ],
+    [
+     "gare",
+     "Bahnhof"
+    ],
+    [
+     "banque",
+     "Bank"
+    ],
+    [
+     "école",
+     "Schule"
+    ],
+    [
+     "église",
+     "Kirche"
+    ],
+    [
+     "magasin",
+     "Laden"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Où est la gare ?"
+     ],
+     "de": [
+      "Wo ist der Bahnhof?"
+     ]
+    },
+    {
+     "t": [
+      "La banque est à gauche."
+     ],
+     "de": [
+      "Die Bank ist links."
+     ]
+    },
+    {
+     "t": [
+      "Allez tout droit.",
+      "Va tout droit."
+     ],
+     "de": [
+      "Gehen Sie geradeaus.",
+      "Geh geradeaus.",
+      "Geht geradeaus."
+     ]
+    },
+    {
+     "t": [
+      "L'école est près de l'église."
+     ],
+     "de": [
+      "Die Schule ist in der Nähe der Kirche.",
+      "Die Schule ist nahe der Kirche."
+     ]
+    },
+    {
+     "t": [
+      "Tournez à droite.",
+      "Tourne à droite."
+     ],
+     "de": [
+      "Biegen Sie rechts ab.",
+      "Bieg rechts ab.",
+      "Biegt rechts ab."
+     ]
+    },
+    {
+     "t": [
+      "Le magasin est fermé aujourd'hui."
+     ],
+     "de": [
+      "Der Laden ist heute geschlossen.",
+      "Das Geschäft ist heute geschlossen."
+     ]
+    },
+    {
+     "t": [
+      "J'habite dans une grande ville."
+     ],
+     "de": [
+      "Ich wohne in einer großen Stadt.",
+      "Ich lebe in einer großen Stadt."
+     ]
+    },
+    {
+     "t": [
+      "Il y a une boulangerie ici ?",
+      "Est-ce qu'il y a une boulangerie ici ?"
+     ],
+     "de": [
+      "Gibt es hier eine Bäckerei?"
+     ]
+    },
+    {
+     "t": [
+      "Le musée est à côté du parc."
+     ],
+     "de": [
+      "Das Museum ist neben dem Park."
+     ]
+    },
+    {
+     "t": [
+      "Nous prenons le bus pour aller à la gare."
+     ],
+     "de": [
+      "Wir nehmen den Bus zum Bahnhof."
+     ]
+    },
+    {
+     "t": [
+      "L'hôpital est loin ?",
+      "Est-ce que l'hôpital est loin ?"
+     ],
+     "de": [
+      "Ist das Krankenhaus weit?",
+      "Ist das Krankenhaus weit weg?",
+      "Wie weit ist das Krankenhaus?"
+     ]
+    },
+    {
+     "t": [
+      "La rue est très longue."
+     ],
+     "de": [
+      "Die Straße ist sehr lang."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "que",
+   "title": "Fragen",
+   "icon": "❓",
+   "row": 9,
+   "level": "A2",
+   "color": "#ff4b4b",
+   "words": [
+    [
+     "qui",
+     "wer"
+    ],
+    [
+     "quoi",
+     "was"
+    ],
+    [
+     "où",
+     "wo"
+    ],
+    [
+     "quand",
+     "wann"
+    ],
+    [
+     "pourquoi",
+     "warum"
+    ],
+    [
+     "comment",
+     "wie"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Qui est-ce ?"
+     ],
+     "de": [
+      "Wer ist das?"
+     ]
+    },
+    {
+     "t": [
+      "Qu'est-ce que tu manges ?",
+      "Tu manges quoi ?"
+     ],
+     "de": [
+      "Was isst du?"
+     ]
+    },
+    {
+     "t": [
+      "Où habites-tu ?",
+      "Tu habites où ?",
+      "Où est-ce que tu habites ?"
+     ],
+     "de": [
+      "Wo wohnst du?",
+      "Wo lebst du?"
+     ]
+    },
+    {
+     "t": [
+      "Quand est-ce que le train arrive ?",
+      "Quand arrive le train ?"
+     ],
+     "de": [
+      "Wann kommt der Zug?",
+      "Wann kommt der Zug an?"
+     ]
+    },
+    {
+     "t": [
+      "Pourquoi es-tu triste ?",
+      "Pourquoi tu es triste ?"
+     ],
+     "de": [
+      "Warum bist du traurig?"
+     ]
+    },
+    {
+     "t": [
+      "Comment vas-tu ?",
+      "Comment ça va ?",
+      "Ça va ?"
+     ],
+     "de": [
+      "Wie geht es dir?",
+      "Wie geht's?"
+     ]
+    },
+    {
+     "t": [
+      "Comment tu t'appelles ?",
+      "Comment t'appelles-tu ?"
+     ],
+     "de": [
+      "Wie heißt du?"
+     ]
+    },
+    {
+     "t": [
+      "Où est mon livre ?"
+     ],
+     "de": [
+      "Wo ist mein Buch?"
+     ]
+    },
+    {
+     "t": [
+      "Qui a un chien ?"
+     ],
+     "de": [
+      "Wer hat einen Hund?"
+     ]
+    },
+    {
+     "t": [
+      "Pourquoi travaille-t-il autant ?",
+      "Pourquoi il travaille autant ?"
+     ],
+     "de": [
+      "Warum arbeitet er so viel?"
+     ]
+    },
+    {
+     "t": [
+      "Combien coûte le pain ?"
+     ],
+     "de": [
+      "Wie viel kostet das Brot?",
+      "Was kostet das Brot?"
+     ]
+    },
+    {
+     "t": [
+      "Quand est-ce qu'on mange ?",
+      "Quand mangeons-nous ?"
+     ],
+     "de": [
+      "Wann essen wir?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res",
+   "title": "Im Restaurant",
+   "icon": "🍽️",
+   "row": 10,
+   "level": "A2",
+   "color": "#ff86d0",
+   "words": [
+    [
+     "carte",
+     "Speisekarte"
+    ],
+    [
+     "serveur",
+     "Kellner"
+    ],
+    [
+     "addition",
+     "Rechnung"
+    ],
+    [
+     "table",
+     "Tisch"
+    ],
+    [
+     "soupe",
+     "Suppe"
+    ],
+    [
+     "café",
+     "Kaffee"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Une table pour deux, s'il vous plaît."
+     ],
+     "de": [
+      "Einen Tisch für zwei, bitte.",
+      "Ein Tisch für zwei, bitte."
+     ]
+    },
+    {
+     "t": [
+      "La carte, s'il vous plaît."
+     ],
+     "de": [
+      "Die Speisekarte, bitte."
+     ]
+    },
+    {
+     "t": [
+      "Je voudrais une soupe."
+     ],
+     "de": [
+      "Ich hätte gern eine Suppe.",
+      "Ich hätte gerne eine Suppe.",
+      "Ich möchte eine Suppe."
+     ]
+    },
+    {
+     "t": [
+      "Le serveur apporte le café."
+     ],
+     "de": [
+      "Der Kellner bringt den Kaffee."
+     ]
+    },
+    {
+     "t": [
+      "L'addition, s'il vous plaît."
+     ],
+     "de": [
+      "Die Rechnung, bitte."
+     ]
+    },
+    {
+     "t": [
+      "Qu'est-ce que vous recommandez ?",
+      "Que recommandez-vous ?"
+     ],
+     "de": [
+      "Was empfehlen Sie?"
+     ]
+    },
+    {
+     "t": [
+      "Le poisson est très bon ici."
+     ],
+     "de": [
+      "Der Fisch ist hier sehr gut."
+     ]
+    },
+    {
+     "t": [
+      "Je suis végétarien.",
+      "Je suis végétarienne."
+     ],
+     "de": [
+      "Ich bin Vegetarier.",
+      "Ich bin Vegetarierin."
+     ]
+    },
+    {
+     "t": [
+      "Je peux payer par carte ?",
+      "Est-ce que je peux payer par carte ?"
+     ],
+     "de": [
+      "Kann ich mit Karte zahlen?",
+      "Kann ich mit Karte bezahlen?"
+     ]
+    },
+    {
+     "t": [
+      "Nous voudrions commander."
+     ],
+     "de": [
+      "Wir möchten bestellen.",
+      "Wir würden gern bestellen.",
+      "Wir würden gerne bestellen."
+     ]
+    },
+    {
+     "t": [
+      "Un verre d'eau, s'il vous plaît."
+     ],
+     "de": [
+      "Ein Glas Wasser, bitte."
+     ]
+    },
+    {
+     "t": [
+      "Le repas est froid."
+     ],
+     "de": [
+      "Das Essen ist kalt."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fre",
+   "title": "Freizeit",
+   "icon": "⚽",
+   "row": 10,
+   "level": "A2",
+   "color": "#78c800",
+   "words": [
+    [
+     "musique",
+     "Musik"
+    ],
+    [
+     "jeu",
+     "Spiel"
+    ],
+    [
+     "film",
+     "Film"
+    ],
+    [
+     "football",
+     "Fußball"
+    ],
+    [
+     "guitare",
+     "Gitarre"
+    ],
+    [
+     "week-end",
+     "Wochenende"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "J'aime la musique."
+     ],
+     "de": [
+      "Ich mag Musik."
+     ]
+    },
+    {
+     "t": [
+      "Il joue au football.",
+      "Il joue au foot."
+     ],
+     "de": [
+      "Er spielt Fußball."
+     ]
+    },
+    {
+     "t": [
+      "Nous regardons un film ce soir."
+     ],
+     "de": [
+      "Wir schauen heute Abend einen Film.",
+      "Wir sehen heute Abend einen Film."
+     ]
+    },
+    {
+     "t": [
+      "Elle joue de la guitare."
+     ],
+     "de": [
+      "Sie spielt Gitarre."
+     ]
+    },
+    {
+     "t": [
+      "Qu'est-ce que tu fais le week-end ?",
+      "Que fais-tu le week-end ?"
+     ],
+     "de": [
+      "Was machst du am Wochenende?"
+     ]
+    },
+    {
+     "t": [
+      "Je lis souvent le soir."
+     ],
+     "de": [
+      "Ich lese oft am Abend.",
+      "Abends lese ich oft.",
+      "Ich lese abends oft."
+     ]
+    },
+    {
+     "t": [
+      "Mon frère aime nager."
+     ],
+     "de": [
+      "Mein Bruder schwimmt gern.",
+      "Mein Bruder schwimmt gerne."
+     ]
+    },
+    {
+     "t": [
+      "Le jeu est amusant."
+     ],
+     "de": [
+      "Das Spiel macht Spaß.",
+      "Das Spiel ist lustig."
+     ]
+    },
+    {
+     "t": [
+      "Nous allons au cinéma samedi."
+     ],
+     "de": [
+      "Wir gehen am Samstag ins Kino."
+     ]
+    },
+    {
+     "t": [
+      "Tu aimes cuisiner ?"
+     ],
+     "de": [
+      "Kochst du gern?",
+      "Kochst du gerne?"
+     ]
+    },
+    {
+     "t": [
+      "J'écoute de la musique tous les jours."
+     ],
+     "de": [
+      "Ich höre jeden Tag Musik."
+     ]
+    },
+    {
+     "t": [
+      "Le week-end, nous faisons de la randonnée.",
+      "Le week-end nous faisons de la randonnée."
+     ],
+     "de": [
+      "Am Wochenende gehen wir wandern.",
+      "Am Wochenende wandern wir."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pst",
+   "title": "Vergangenheit",
+   "icon": "⏪",
+   "row": 11,
+   "level": "B1",
+   "color": "#1cb0f6",
+   "words": [
+    [
+     "été",
+     "gewesen"
+    ],
+    [
+     "allé",
+     "gegangen"
+    ],
+    [
+     "vu",
+     "gesehen"
+    ],
+    [
+     "mangé",
+     "gegessen"
+    ],
+    [
+     "acheté",
+     "gekauft"
+    ],
+    [
+     "fait",
+     "gemacht"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Hier, j'étais à la maison.",
+      "Hier j'étais à la maison."
+     ],
+     "de": [
+      "Gestern war ich zu Hause.",
+      "Gestern war ich zuhause."
+     ]
+    },
+    {
+     "t": [
+      "Nous étions à Paris l'année dernière."
+     ],
+     "de": [
+      "Wir waren letztes Jahr in Paris."
+     ]
+    },
+    {
+     "t": [
+      "Elle est allée à l'école."
+     ],
+     "de": [
+      "Sie ist zur Schule gegangen.",
+      "Sie ging zur Schule."
+     ]
+    },
+    {
+     "t": [
+      "J'ai vu un film hier."
+     ],
+     "de": [
+      "Ich habe gestern einen Film gesehen.",
+      "Ich sah gestern einen Film."
+     ]
+    },
+    {
+     "t": [
+      "Il a mangé une pomme."
+     ],
+     "de": [
+      "Er hat einen Apfel gegessen.",
+      "Er aß einen Apfel."
+     ]
+    },
+    {
+     "t": [
+      "Ils ont acheté une nouvelle voiture."
+     ],
+     "de": [
+      "Sie haben ein neues Auto gekauft.",
+      "Sie kauften ein neues Auto."
+     ]
+    },
+    {
+     "t": [
+      "Tu as bien dormi ?",
+      "As-tu bien dormi ?"
+     ],
+     "de": [
+      "Hast du gut geschlafen?"
+     ]
+    },
+    {
+     "t": [
+      "Je n'ai pas eu le temps."
+     ],
+     "de": [
+      "Ich hatte keine Zeit."
+     ]
+    },
+    {
+     "t": [
+      "Nous avons beaucoup travaillé la semaine dernière."
+     ],
+     "de": [
+      "Wir haben letzte Woche viel gearbeitet.",
+      "Wir arbeiteten letzte Woche viel."
+     ]
+    },
+    {
+     "t": [
+      "Ma mère a cuisiné du poisson."
+     ],
+     "de": [
+      "Meine Mutter hat Fisch gekocht.",
+      "Meine Mutter kochte Fisch."
+     ]
+    },
+    {
+     "t": [
+      "Il a fait mauvais lundi.",
+      "Lundi, il a fait mauvais."
+     ],
+     "de": [
+      "Am Montag war das Wetter schlecht.",
+      "Das Wetter war am Montag schlecht."
+     ]
+    },
+    {
+     "t": [
+      "Quand es-tu arrivé ?",
+      "Quand es-tu arrivée ?",
+      "Quand est-ce que tu es arrivé ?"
+     ],
+     "de": [
+      "Wann bist du angekommen?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fut",
+   "title": "Zukunft",
+   "icon": "⏩",
+   "row": 12,
+   "level": "B1",
+   "color": "#ce82ff",
+   "words": [
+    [
+     "prochain",
+     "nächste"
+    ],
+    [
+     "bientôt",
+     "bald"
+    ],
+    [
+     "tard",
+     "spät"
+    ],
+    [
+     "projet",
+     "Plan"
+    ],
+    [
+     "avenir",
+     "Zukunft"
+    ],
+    [
+     "voyager",
+     "reisen"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Je t'appellerai demain."
+     ],
+     "de": [
+      "Ich rufe dich morgen an.",
+      "Ich werde dich morgen anrufen."
+     ]
+    },
+    {
+     "t": [
+      "Nous allons voyager l'année prochaine.",
+      "Nous voyagerons l'année prochaine."
+     ],
+     "de": [
+      "Wir werden nächstes Jahr reisen.",
+      "Nächstes Jahr reisen wir."
+     ]
+    },
+    {
+     "t": [
+      "Elle sera médecin."
+     ],
+     "de": [
+      "Sie wird Ärztin.",
+      "Sie wird Ärztin sein."
+     ]
+    },
+    {
+     "t": [
+      "Il va bientôt pleuvoir.",
+      "Il pleuvra bientôt."
+     ],
+     "de": [
+      "Es wird bald regnen."
+     ]
+    },
+    {
+     "t": [
+      "Je vais apprendre l'anglais."
+     ],
+     "de": [
+      "Ich werde Englisch lernen."
+     ]
+    },
+    {
+     "t": [
+      "Ils viendront plus tard."
+     ],
+     "de": [
+      "Sie kommen später.",
+      "Sie werden später kommen."
+     ]
+    },
+    {
+     "t": [
+      "Qu'est-ce que tu feras la semaine prochaine ?",
+      "Que feras-tu la semaine prochaine ?"
+     ],
+     "de": [
+      "Was wirst du nächste Woche machen?",
+      "Was machst du nächste Woche?"
+     ]
+    },
+    {
+     "t": [
+      "L'été prochain, nous achèterons une maison.",
+      "L'été prochain nous achèterons une maison."
+     ],
+     "de": [
+      "Nächsten Sommer kaufen wir ein Haus.",
+      "Nächsten Sommer werden wir ein Haus kaufen."
+     ]
+    },
+    {
+     "t": [
+      "Je ne t'oublierai pas."
+     ],
+     "de": [
+      "Ich werde dich nicht vergessen."
+     ]
+    },
+    {
+     "t": [
+      "Le train arrivera à huit heures."
+     ],
+     "de": [
+      "Der Zug kommt um acht Uhr an.",
+      "Der Zug wird um acht Uhr ankommen.",
+      "Der Zug kommt um acht an."
+     ]
+    },
+    {
+     "t": [
+      "Tu as des projets pour l'avenir ?",
+      "As-tu des projets pour l'avenir ?"
+     ],
+     "de": [
+      "Hast du Pläne für die Zukunft?"
+     ]
+    },
+    {
+     "t": [
+      "Bientôt, tout ira mieux.",
+      "Bientôt tout ira mieux."
+     ],
+     "de": [
+      "Bald wird alles besser."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tra",
+   "title": "Reisen",
+   "icon": "✈️",
+   "row": 12,
+   "level": "B1",
+   "color": "#00cd9c",
+   "words": [
+    [
+     "billet",
+     "Fahrkarte"
+    ],
+    [
+     "aéroport",
+     "Flughafen"
+    ],
+    [
+     "hôtel",
+     "Hotel"
+    ],
+    [
+     "valise",
+     "Koffer"
+    ],
+    [
+     "passeport",
+     "Reisepass"
+    ],
+    [
+     "train",
+     "Zug"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "J'ai besoin d'un billet pour Londres."
+     ],
+     "de": [
+      "Ich brauche eine Fahrkarte nach London.",
+      "Ich brauche ein Ticket nach London."
+     ]
+    },
+    {
+     "t": [
+      "L'avion part à neuf heures."
+     ],
+     "de": [
+      "Das Flugzeug fliegt um neun Uhr ab.",
+      "Das Flugzeug startet um neun Uhr.",
+      "Das Flugzeug fliegt um neun ab."
+     ]
+    },
+    {
+     "t": [
+      "Où est mon passeport ?"
+     ],
+     "de": [
+      "Wo ist mein Reisepass?",
+      "Wo ist mein Pass?"
+     ]
+    },
+    {
+     "t": [
+      "Nous avons réservé une chambre à l'hôtel."
+     ],
+     "de": [
+      "Wir haben ein Zimmer im Hotel gebucht.",
+      "Wir haben ein Zimmer im Hotel reserviert."
+     ]
+    },
+    {
+     "t": [
+      "Ma valise est trop lourde."
+     ],
+     "de": [
+      "Mein Koffer ist zu schwer."
+     ]
+    },
+    {
+     "t": [
+      "Le train est en retard."
+     ],
+     "de": [
+      "Der Zug hat Verspätung."
+     ]
+    },
+    {
+     "t": [
+      "Comment je vais à l'aéroport ?",
+      "Comment aller à l'aéroport ?"
+     ],
+     "de": [
+      "Wie komme ich zum Flughafen?"
+     ]
+    },
+    {
+     "t": [
+      "Je voudrais voir la mer."
+     ],
+     "de": [
+      "Ich möchte das Meer sehen.",
+      "Ich würde gern das Meer sehen."
+     ]
+    },
+    {
+     "t": [
+      "Nous voyageons en train parce que c'est moins cher."
+     ],
+     "de": [
+      "Wir reisen mit dem Zug, weil es billiger ist.",
+      "Wir fahren mit dem Zug, weil es billiger ist."
+     ]
+    },
+    {
+     "t": [
+      "L'hôtel est près de la plage."
+     ],
+     "de": [
+      "Das Hotel ist in der Nähe des Strandes.",
+      "Das Hotel liegt nahe am Strand.",
+      "Das Hotel ist nahe am Strand."
+     ]
+    },
+    {
+     "t": [
+      "Tu as apporté la carte ?",
+      "As-tu apporté la carte ?"
+     ],
+     "de": [
+      "Hast du die Karte mitgebracht?"
+     ]
+    },
+    {
+     "t": [
+      "En vacances, je dors beaucoup.",
+      "En vacances je dors beaucoup."
+     ],
+     "de": [
+      "Im Urlaub schlafe ich viel."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wor",
+   "title": "Arbeit",
+   "icon": "💼",
+   "row": 13,
+   "level": "B1",
+   "color": "#2b70c9",
+   "words": [
+    [
+     "travail",
+     "Arbeit"
+    ],
+    [
+     "collègue",
+     "Kollege"
+    ],
+    [
+     "bureau",
+     "Büro"
+    ],
+    [
+     "réunion",
+     "Besprechung"
+    ],
+    [
+     "chef",
+     "Chef"
+    ],
+    [
+     "salaire",
+     "Gehalt"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Je travaille dans un bureau."
+     ],
+     "de": [
+      "Ich arbeite in einem Büro."
+     ]
+    },
+    {
+     "t": [
+      "Mon collègue est très gentil.",
+      "Ma collègue est très gentille."
+     ],
+     "de": [
+      "Mein Kollege ist sehr nett.",
+      "Meine Kollegin ist sehr nett.",
+      "Mein Kollege ist sehr freundlich.",
+      "Meine Kollegin ist sehr freundlich."
+     ]
+    },
+    {
+     "t": [
+      "La réunion commence à dix heures."
+     ],
+     "de": [
+      "Die Besprechung beginnt um zehn Uhr.",
+      "Das Meeting beginnt um zehn Uhr.",
+      "Die Besprechung beginnt um zehn."
+     ]
+    },
+    {
+     "t": [
+      "Mon chef est en vacances.",
+      "Ma cheffe est en vacances."
+     ],
+     "de": [
+      "Mein Chef ist im Urlaub.",
+      "Meine Chefin ist im Urlaub."
+     ]
+    },
+    {
+     "t": [
+      "Elle cherche un nouveau travail.",
+      "Elle cherche un nouvel emploi."
+     ],
+     "de": [
+      "Sie sucht eine neue Arbeit.",
+      "Sie sucht einen neuen Job.",
+      "Sie sucht eine neue Stelle."
+     ]
+    },
+    {
+     "t": [
+      "Je dois travailler tard aujourd'hui."
+     ],
+     "de": [
+      "Ich muss heute lange arbeiten.",
+      "Ich muss heute spät arbeiten."
+     ]
+    },
+    {
+     "t": [
+      "Il travaille comme professeur.",
+      "Il est professeur."
+     ],
+     "de": [
+      "Er arbeitet als Lehrer.",
+      "Er ist Lehrer."
+     ]
+    },
+    {
+     "t": [
+      "Nous avons beaucoup de travail cette semaine."
+     ],
+     "de": [
+      "Wir haben diese Woche viel Arbeit."
+     ]
+    },
+    {
+     "t": [
+      "Je trouve que le projet est bon.",
+      "Je pense que le projet est bon."
+     ],
+     "de": [
+      "Ich finde den Plan gut.",
+      "Ich denke, der Plan ist gut.",
+      "Ich finde das Projekt gut.",
+      "Ich denke, das Projekt ist gut."
+     ]
+    },
+    {
+     "t": [
+      "À mon avis, nous avons besoin de plus de temps.",
+      "À mon avis nous avons besoin de plus de temps."
+     ],
+     "de": [
+      "Meiner Meinung nach brauchen wir mehr Zeit."
+     ]
+    },
+    {
+     "t": [
+      "Tu peux m'envoyer l'e-mail ?",
+      "Peux-tu m'envoyer l'e-mail ?"
+     ],
+     "de": [
+      "Kannst du mir die E-Mail schicken?",
+      "Kannst du mir die Mail schicken?"
+     ]
+    },
+    {
+     "t": [
+      "Je suis content de mon travail.",
+      "Je suis contente de mon travail."
+     ],
+     "de": [
+      "Ich bin mit meiner Arbeit zufrieden.",
+      "Ich bin zufrieden mit meiner Arbeit."
+     ]
+    }
+   ]
   }
  ],
  "gloss": {
@@ -1246,7 +2983,224 @@
   "en": "in",
   "as-tu": "hast du",
   "parles-tu": "sprichst du",
-  "fille": "Mädchen / Tochter"
+  "fille": "Mädchen / Tochter",
+  "trois": "drei",
+  "quatre": "vier",
+  "cinq": "fünf",
+  "six": "sechs",
+  "sept": "sieben",
+  "huit": "acht",
+  "neuf": "neun",
+  "dix": "zehn",
+  "vingt": "zwanzig",
+  "cinquante": "fünfzig",
+  "sœurs": "Schwestern",
+  "pommes": "Äpfel",
+  "ans": "Jahre",
+  "quel": "welches / wie",
+  "âge": "Alter",
+  "jours": "Tage",
+  "besoin": "Bedarf (avoir besoin = brauchen)",
+  "œufs": "Eier",
+  "chats": "Katzen",
+  "porte": "trägt",
+  "rouge": "rot",
+  "noires": "schwarz",
+  "bleue": "blau",
+  "verte": "grün",
+  "blanche": "weiß",
+  "nouvelle": "neu",
+  "couleur": "Farbe",
+  "voiture": "Auto",
+  "jaune": "gelb",
+  "aime": "mag / liebt",
+  "sa": "sein(e) / ihr(e)",
+  "veste": "Jacke",
+  "c'était": "es war",
+  "dimanche": "Sonntag",
+  "demain": "morgen",
+  "heures": "Uhr / Stunden",
+  "pendant": "während",
+  "matin": "Morgen",
+  "café": "Kaffee",
+  "tous": "alle",
+  "fait": "macht (il fait froid = es ist kalt)",
+  "brille": "scheint",
+  "pleut": "regnet",
+  "très": "sehr",
+  "été": "Sommer / gewesen",
+  "neige": "schneit / Schnee",
+  "hiver": "Winter",
+  "fort": "stark",
+  "temps": "Wetter / Zeit",
+  "beau": "schön",
+  "parapluie": "Regenschirm",
+  "parce": "weil (parce que)",
+  "qu'il": "dass er/es",
+  "fera": "wird (machen)",
+  "printemps": "Frühling",
+  "souvent": "oft",
+  "restons": "bleiben",
+  "quand": "wann / wenn",
+  "où": "wo",
+  "gauche": "links",
+  "droite": "rechts",
+  "allez": "geht / gehen Sie",
+  "tout": "ganz / alles",
+  "droit": "gerade",
+  "près": "nahe",
+  "l'école": "die Schule",
+  "l'église": "die Kirche",
+  "tournez": "biegen Sie ab",
+  "tourne": "bieg ab",
+  "fermé": "geschlossen",
+  "habite": "wohne",
+  "ville": "Stadt",
+  "y": "dort (il y a = es gibt)",
+  "boulangerie": "Bäckerei",
+  "ici": "hier",
+  "musée": "Museum",
+  "côté": "Seite (à côté de = neben)",
+  "parc": "Park",
+  "prenons": "nehmen",
+  "bus": "Bus",
+  "aller": "gehen / fahren",
+  "l'hôpital": "das Krankenhaus",
+  "loin": "weit",
+  "longue": "lang",
+  "est-ce": "ist das",
+  "qu'est-ce": "was",
+  "habites-tu": "wohnst du",
+  "arrive": "kommt an",
+  "es-tu": "bist du",
+  "triste": "traurig",
+  "vas-tu": "gehst du (wie geht es dir)",
+  "t'appelles": "heißt",
+  "autant": "so viel",
+  "combien": "wie viel",
+  "coûte": "kostet",
+  "on": "man / wir",
+  "mangeons-nous": "essen wir",
+  "voudrais": "hätte gern / möchte",
+  "voudrions": "möchten",
+  "apporte": "bringt",
+  "l'addition": "die Rechnung",
+  "recommandez": "empfehlen",
+  "bon": "gut",
+  "végétarien": "Vegetarier",
+  "végétarienne": "Vegetarierin",
+  "peux": "kann",
+  "payer": "zahlen",
+  "par": "mit / per",
+  "commander": "bestellen",
+  "verre": "Glas",
+  "d'eau": "Wasser",
+  "repas": "Essen / Mahlzeit",
+  "joue": "spielt",
+  "regardons": "schauen",
+  "soir": "Abend",
+  "fais": "machst",
+  "nager": "schwimmen",
+  "amusant": "lustig",
+  "allons": "werden / gehen",
+  "cinéma": "Kino",
+  "samedi": "Samstag",
+  "cuisiner": "kochen",
+  "j'écoute": "ich höre",
+  "faisons": "machen",
+  "randonnée": "Wanderung",
+  "j'étais": "ich war",
+  "étions": "waren",
+  "l'année": "das Jahr",
+  "dernière": "letzte",
+  "allée": "gegangen",
+  "vu": "gesehen",
+  "mangé": "gegessen",
+  "ont": "haben",
+  "acheté": "gekauft",
+  "dormi": "geschlafen",
+  "bien": "gut",
+  "n'ai": "habe nicht",
+  "eu": "gehabt",
+  "travaillé": "gearbeitet",
+  "cuisiné": "gekocht",
+  "mauvais": "schlecht",
+  "arrivé": "angekommen",
+  "arrivée": "angekommen",
+  "paris": "Paris",
+  "t'appellerai": "werde dich anrufen",
+  "prochaine": "nächste",
+  "voyagerons": "werden reisen",
+  "sera": "wird sein",
+  "médecin": "Arzt / Ärztin",
+  "pleuvoir": "regnen",
+  "apprendre": "lernen",
+  "l'anglais": "Englisch",
+  "viendront": "werden kommen",
+  "plus": "mehr",
+  "feras": "wirst machen",
+  "l'été": "der Sommer",
+  "achèterons": "werden kaufen",
+  "t'oublierai": "werde dich vergessen",
+  "arrivera": "wird ankommen",
+  "projets": "Pläne",
+  "l'avenir": "die Zukunft",
+  "ira": "wird gehen",
+  "mieux": "besser",
+  "billet": "Fahrkarte",
+  "londres": "London",
+  "l'avion": "das Flugzeug",
+  "part": "fährt ab / fliegt ab",
+  "réservé": "reserviert / gebucht",
+  "chambre": "Zimmer",
+  "l'hôtel": "das Hotel",
+  "valise": "Koffer",
+  "trop": "zu",
+  "lourde": "schwer",
+  "retard": "Verspätung",
+  "l'aéroport": "der Flughafen",
+  "voir": "sehen",
+  "mer": "Meer",
+  "voyageons": "reisen",
+  "moins": "weniger",
+  "cher": "teuer",
+  "plage": "Strand",
+  "apporté": "mitgebracht",
+  "vacances": "Urlaub",
+  "dors": "schlafe",
+  "bureau": "Büro",
+  "gentil": "nett",
+  "gentille": "nett",
+  "réunion": "Besprechung",
+  "commence": "beginnt",
+  "cherche": "sucht",
+  "nouveau": "neu",
+  "dois": "muss",
+  "tard": "spät",
+  "comme": "als / wie",
+  "professeur": "Lehrer(in)",
+  "cette": "diese",
+  "trouve": "finde",
+  "pense": "denke",
+  "que": "dass",
+  "projet": "Projekt / Plan",
+  "avis": "Meinung",
+  "m'envoyer": "mir schicken",
+  "l'e-mail": "die E-Mail",
+  "content": "zufrieden",
+  "contente": "zufrieden",
+  "aimes": "magst",
+  "d'un": "eines / einen",
+  "dans": "in",
+  "est-il": "ist es",
+  "fait-il": "(Wetter) ist es",
+  "j'aime": "ich mag",
+  "j'habite": "ich wohne",
+  "pour": "für / um zu",
+  "qu'on": "dass man / wir",
+  "quelle": "welche",
+  "travaille-t-il": "arbeitet er",
+  "vais": "gehe / werde"
  },
  "glossDe": {
   "ich": "je",

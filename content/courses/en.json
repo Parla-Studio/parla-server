@@ -1,6 +1,6 @@
 {
  "id": "en",
- "version": 1,
+ "version": 2,
  "name": "Englisch",
  "flag": "🇬🇧",
  "tts": "en-GB",
@@ -15,6 +15,7 @@
    "title": "Grundlagen 1",
    "icon": "🥚",
    "row": 0,
+   "level": "A1",
    "color": "#1cb0f6",
    "words": [
     [
@@ -158,6 +159,7 @@
    "title": "Grundlagen 2",
    "icon": "📖",
    "row": 1,
+   "level": "A1",
    "color": "#ce82ff",
    "words": [
     [
@@ -291,6 +293,7 @@
    "title": "Begrüßungen",
    "icon": "👋",
    "row": 1,
+   "level": "A1",
    "color": "#ff9600",
    "words": [
     [
@@ -432,6 +435,7 @@
    "title": "Essen",
    "icon": "🍎",
    "row": 2,
+   "level": "A1",
    "color": "#ff4b4b",
    "words": [
     [
@@ -560,6 +564,7 @@
    "title": "Tiere",
    "icon": "🐶",
    "row": 2,
+   "level": "A1",
    "color": "#78c800",
    "words": [
     [
@@ -687,6 +692,7 @@
    "title": "Plural",
    "icon": "👥",
    "row": 3,
+   "level": "A1",
    "color": "#2b70c9",
    "words": [
     [
@@ -808,6 +814,7 @@
    "title": "Familie",
    "icon": "👪",
    "row": 4,
+   "level": "A1",
    "color": "#ff86d0",
    "words": [
     [
@@ -928,6 +935,7 @@
    "title": "Adjektive",
    "icon": "🎨",
    "row": 4,
+   "level": "A1",
    "color": "#00cd9c",
    "words": [
     [
@@ -1045,6 +1053,7 @@
    "title": "Verben: Präsens",
    "icon": "🏃",
    "row": 5,
+   "level": "A1",
    "color": "#ff9600",
    "words": [
     [
@@ -1162,6 +1171,1760 @@
      ]
     }
    ]
+  },
+  {
+   "id": "num",
+   "title": "Zahlen",
+   "icon": "🔢",
+   "row": 6,
+   "level": "A1",
+   "color": "#1cb0f6",
+   "words": [
+    [
+     "one",
+     "eins"
+    ],
+    [
+     "two",
+     "zwei"
+    ],
+    [
+     "three",
+     "drei"
+    ],
+    [
+     "four",
+     "vier"
+    ],
+    [
+     "five",
+     "fünf"
+    ],
+    [
+     "ten",
+     "zehn"
+    ],
+    [
+     "twenty",
+     "zwanzig"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "We have three cats."
+     ],
+     "de": [
+      "Wir haben drei Katzen."
+     ]
+    },
+    {
+     "t": [
+      "She has two sisters."
+     ],
+     "de": [
+      "Sie hat zwei Schwestern."
+     ]
+    },
+    {
+     "t": [
+      "He eats four apples."
+     ],
+     "de": [
+      "Er isst vier Äpfel."
+     ]
+    },
+    {
+     "t": [
+      "Five men drink water."
+     ],
+     "de": [
+      "Fünf Männer trinken Wasser."
+     ]
+    },
+    {
+     "t": [
+      "I am twenty years old.",
+      "I'm twenty years old.",
+      "I am twenty.",
+      "I'm twenty."
+     ],
+     "de": [
+      "Ich bin zwanzig Jahre alt.",
+      "Ich bin zwanzig."
+     ]
+    },
+    {
+     "t": [
+      "The boy is ten years old.",
+      "The boy is ten."
+     ],
+     "de": [
+      "Der Junge ist zehn Jahre alt.",
+      "Der Junge ist zehn."
+     ]
+    },
+    {
+     "t": [
+      "How old are you?"
+     ],
+     "de": [
+      "Wie alt bist du?",
+      "Wie alt sind Sie?",
+      "Wie alt seid ihr?"
+     ]
+    },
+    {
+     "t": [
+      "I have six books."
+     ],
+     "de": [
+      "Ich habe sechs Bücher."
+     ]
+    },
+    {
+     "t": [
+      "A week has seven days."
+     ],
+     "de": [
+      "Eine Woche hat sieben Tage."
+     ]
+    },
+    {
+     "t": [
+      "We need eight eggs."
+     ],
+     "de": [
+      "Wir brauchen acht Eier."
+     ]
+    },
+    {
+     "t": [
+      "My father is fifty years old.",
+      "My father is fifty."
+     ],
+     "de": [
+      "Mein Vater ist fünfzig Jahre alt.",
+      "Mein Vater ist fünfzig."
+     ]
+    },
+    {
+     "t": [
+      "I have one dog and two cats.",
+      "I have a dog and two cats."
+     ],
+     "de": [
+      "Ich habe einen Hund und zwei Katzen."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "col",
+   "title": "Farben & Kleidung",
+   "icon": "👕",
+   "row": 6,
+   "level": "A1",
+   "color": "#ce82ff",
+   "words": [
+    [
+     "shirt",
+     "Hemd"
+    ],
+    [
+     "dress",
+     "Kleid"
+    ],
+    [
+     "shoes",
+     "Schuhe"
+    ],
+    [
+     "blue",
+     "blau"
+    ],
+    [
+     "green",
+     "grün"
+    ],
+    [
+     "black",
+     "schwarz"
+    ],
+    [
+     "white",
+     "weiß"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "The shirt is blue."
+     ],
+     "de": [
+      "Das Hemd ist blau."
+     ]
+    },
+    {
+     "t": [
+      "She wears a red dress.",
+      "She is wearing a red dress.",
+      "She's wearing a red dress."
+     ],
+     "de": [
+      "Sie trägt ein rotes Kleid."
+     ]
+    },
+    {
+     "t": [
+      "My shoes are black."
+     ],
+     "de": [
+      "Meine Schuhe sind schwarz."
+     ]
+    },
+    {
+     "t": [
+      "The cat is white."
+     ],
+     "de": [
+      "Die Katze ist weiß."
+     ]
+    },
+    {
+     "t": [
+      "I have a green shirt."
+     ],
+     "de": [
+      "Ich habe ein grünes Hemd."
+     ]
+    },
+    {
+     "t": [
+      "He wears black shoes.",
+      "He is wearing black shoes.",
+      "He's wearing black shoes."
+     ],
+     "de": [
+      "Er trägt schwarze Schuhe."
+     ]
+    },
+    {
+     "t": [
+      "The dress is new."
+     ],
+     "de": [
+      "Das Kleid ist neu."
+     ]
+    },
+    {
+     "t": [
+      "What color is the car?",
+      "What colour is the car?"
+     ],
+     "de": [
+      "Welche Farbe hat das Auto?"
+     ]
+    },
+    {
+     "t": [
+      "The car is yellow."
+     ],
+     "de": [
+      "Das Auto ist gelb."
+     ]
+    },
+    {
+     "t": [
+      "I like the blue dress."
+     ],
+     "de": [
+      "Mir gefällt das blaue Kleid.",
+      "Ich mag das blaue Kleid."
+     ]
+    },
+    {
+     "t": [
+      "The boy wears a white shirt.",
+      "The boy is wearing a white shirt."
+     ],
+     "de": [
+      "Der Junge trägt ein weißes Hemd."
+     ]
+    },
+    {
+     "t": [
+      "Her jacket is green."
+     ],
+     "de": [
+      "Ihre Jacke ist grün."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tim",
+   "title": "Zeit & Tage",
+   "icon": "⏰",
+   "row": 7,
+   "level": "A1",
+   "color": "#ff9600",
+   "words": [
+    [
+     "today",
+     "heute"
+    ],
+    [
+     "yesterday",
+     "gestern"
+    ],
+    [
+     "Monday",
+     "Montag"
+    ],
+    [
+     "Friday",
+     "Freitag"
+    ],
+    [
+     "week",
+     "Woche"
+    ],
+    [
+     "hour",
+     "Stunde"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Today is Monday."
+     ],
+     "de": [
+      "Heute ist Montag."
+     ]
+    },
+    {
+     "t": [
+      "Tomorrow is Friday."
+     ],
+     "de": [
+      "Morgen ist Freitag."
+     ]
+    },
+    {
+     "t": [
+      "Yesterday was Sunday."
+     ],
+     "de": [
+      "Gestern war Sonntag."
+     ]
+    },
+    {
+     "t": [
+      "What time is it?"
+     ],
+     "de": [
+      "Wie spät ist es?",
+      "Wie viel Uhr ist es?"
+     ]
+    },
+    {
+     "t": [
+      "It is three o'clock.",
+      "It's three o'clock."
+     ],
+     "de": [
+      "Es ist drei Uhr."
+     ]
+    },
+    {
+     "t": [
+      "I work on Monday.",
+      "I work on Mondays."
+     ],
+     "de": [
+      "Ich arbeite am Montag.",
+      "Ich arbeite montags."
+     ]
+    },
+    {
+     "t": [
+      "We eat at seven.",
+      "We eat at seven o'clock."
+     ],
+     "de": [
+      "Wir essen um sieben.",
+      "Wir essen um sieben Uhr."
+     ]
+    },
+    {
+     "t": [
+      "The week has seven days."
+     ],
+     "de": [
+      "Die Woche hat sieben Tage."
+     ]
+    },
+    {
+     "t": [
+      "I read for one hour.",
+      "I read for an hour."
+     ],
+     "de": [
+      "Ich lese eine Stunde.",
+      "Ich lese eine Stunde lang."
+     ]
+    },
+    {
+     "t": [
+      "See you on Friday."
+     ],
+     "de": [
+      "Bis Freitag.",
+      "Wir sehen uns am Freitag."
+     ]
+    },
+    {
+     "t": [
+      "In the morning I drink coffee."
+     ],
+     "de": [
+      "Am Morgen trinke ich Kaffee.",
+      "Morgens trinke ich Kaffee."
+     ]
+    },
+    {
+     "t": [
+      "She works every day."
+     ],
+     "de": [
+      "Sie arbeitet jeden Tag."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wea",
+   "title": "Wetter",
+   "icon": "☀️",
+   "row": 8,
+   "level": "A2",
+   "color": "#00cd9c",
+   "words": [
+    [
+     "sun",
+     "Sonne"
+    ],
+    [
+     "rain",
+     "Regen"
+    ],
+    [
+     "cold",
+     "kalt"
+    ],
+    [
+     "hot",
+     "heiß"
+    ],
+    [
+     "snow",
+     "Schnee"
+    ],
+    [
+     "wind",
+     "Wind"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "It is cold today.",
+      "It's cold today."
+     ],
+     "de": [
+      "Heute ist es kalt.",
+      "Es ist heute kalt."
+     ]
+    },
+    {
+     "t": [
+      "The sun is shining."
+     ],
+     "de": [
+      "Die Sonne scheint."
+     ]
+    },
+    {
+     "t": [
+      "It is raining.",
+      "It's raining."
+     ],
+     "de": [
+      "Es regnet."
+     ]
+    },
+    {
+     "t": [
+      "It is very hot in summer.",
+      "It's very hot in summer."
+     ],
+     "de": [
+      "Im Sommer ist es sehr heiß."
+     ]
+    },
+    {
+     "t": [
+      "It snows in winter."
+     ],
+     "de": [
+      "Im Winter schneit es."
+     ]
+    },
+    {
+     "t": [
+      "The wind is strong."
+     ],
+     "de": [
+      "Der Wind ist stark."
+     ]
+    },
+    {
+     "t": [
+      "How is the weather?",
+      "What is the weather like?",
+      "What's the weather like?"
+     ],
+     "de": [
+      "Wie ist das Wetter?"
+     ]
+    },
+    {
+     "t": [
+      "The weather is nice today."
+     ],
+     "de": [
+      "Das Wetter ist heute schön.",
+      "Heute ist das Wetter schön."
+     ]
+    },
+    {
+     "t": [
+      "I need an umbrella because it is raining.",
+      "I need an umbrella because it's raining."
+     ],
+     "de": [
+      "Ich brauche einen Regenschirm, weil es regnet."
+     ]
+    },
+    {
+     "t": [
+      "Tomorrow it will be warm.",
+      "It will be warm tomorrow."
+     ],
+     "de": [
+      "Morgen wird es warm."
+     ]
+    },
+    {
+     "t": [
+      "In spring the weather is often good."
+     ],
+     "de": [
+      "Im Frühling ist das Wetter oft gut.",
+      "Im Frühling ist das Wetter oft schön."
+     ]
+    },
+    {
+     "t": [
+      "We stay at home when it snows."
+     ],
+     "de": [
+      "Wir bleiben zu Hause, wenn es schneit.",
+      "Wir bleiben zuhause, wenn es schneit."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cit",
+   "title": "In der Stadt",
+   "icon": "🏙️",
+   "row": 8,
+   "level": "A2",
+   "color": "#2b70c9",
+   "words": [
+    [
+     "street",
+     "Straße"
+    ],
+    [
+     "station",
+     "Bahnhof"
+    ],
+    [
+     "bank",
+     "Bank"
+    ],
+    [
+     "school",
+     "Schule"
+    ],
+    [
+     "church",
+     "Kirche"
+    ],
+    [
+     "shop",
+     "Laden"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Where is the station?"
+     ],
+     "de": [
+      "Wo ist der Bahnhof?"
+     ]
+    },
+    {
+     "t": [
+      "The bank is on the left."
+     ],
+     "de": [
+      "Die Bank ist links."
+     ]
+    },
+    {
+     "t": [
+      "Go straight ahead."
+     ],
+     "de": [
+      "Geh geradeaus.",
+      "Gehen Sie geradeaus.",
+      "Geht geradeaus."
+     ]
+    },
+    {
+     "t": [
+      "The school is near the church."
+     ],
+     "de": [
+      "Die Schule ist in der Nähe der Kirche.",
+      "Die Schule ist nahe der Kirche."
+     ]
+    },
+    {
+     "t": [
+      "Turn right."
+     ],
+     "de": [
+      "Biegen Sie rechts ab.",
+      "Bieg rechts ab.",
+      "Biegt rechts ab."
+     ]
+    },
+    {
+     "t": [
+      "The shop is closed today."
+     ],
+     "de": [
+      "Der Laden ist heute geschlossen.",
+      "Das Geschäft ist heute geschlossen."
+     ]
+    },
+    {
+     "t": [
+      "I live in a big city."
+     ],
+     "de": [
+      "Ich wohne in einer großen Stadt.",
+      "Ich lebe in einer großen Stadt."
+     ]
+    },
+    {
+     "t": [
+      "Is there a bakery here?"
+     ],
+     "de": [
+      "Gibt es hier eine Bäckerei?"
+     ]
+    },
+    {
+     "t": [
+      "The museum is next to the park."
+     ],
+     "de": [
+      "Das Museum ist neben dem Park."
+     ]
+    },
+    {
+     "t": [
+      "We take the bus to the station."
+     ],
+     "de": [
+      "Wir nehmen den Bus zum Bahnhof."
+     ]
+    },
+    {
+     "t": [
+      "How far is the hospital?"
+     ],
+     "de": [
+      "Wie weit ist das Krankenhaus?",
+      "Wie weit ist es bis zum Krankenhaus?"
+     ]
+    },
+    {
+     "t": [
+      "The street is very long."
+     ],
+     "de": [
+      "Die Straße ist sehr lang."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "que",
+   "title": "Fragen",
+   "icon": "❓",
+   "row": 9,
+   "level": "A2",
+   "color": "#ff4b4b",
+   "words": [
+    [
+     "who",
+     "wer"
+    ],
+    [
+     "what",
+     "was"
+    ],
+    [
+     "where",
+     "wo"
+    ],
+    [
+     "when",
+     "wann"
+    ],
+    [
+     "why",
+     "warum"
+    ],
+    [
+     "how",
+     "wie"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Who is that?"
+     ],
+     "de": [
+      "Wer ist das?"
+     ]
+    },
+    {
+     "t": [
+      "What are you eating?"
+     ],
+     "de": [
+      "Was isst du?",
+      "Was esst ihr?",
+      "Was essen Sie?"
+     ]
+    },
+    {
+     "t": [
+      "Where do you live?"
+     ],
+     "de": [
+      "Wo wohnst du?",
+      "Wo wohnen Sie?",
+      "Wo wohnt ihr?",
+      "Wo lebst du?"
+     ]
+    },
+    {
+     "t": [
+      "When does the train come?",
+      "When is the train coming?"
+     ],
+     "de": [
+      "Wann kommt der Zug?"
+     ]
+    },
+    {
+     "t": [
+      "Why are you sad?"
+     ],
+     "de": [
+      "Warum bist du traurig?",
+      "Warum sind Sie traurig?",
+      "Warum seid ihr traurig?"
+     ]
+    },
+    {
+     "t": [
+      "How are you?"
+     ],
+     "de": [
+      "Wie geht es dir?",
+      "Wie geht's?",
+      "Wie geht es Ihnen?",
+      "Wie geht es euch?"
+     ]
+    },
+    {
+     "t": [
+      "What is your name?",
+      "What's your name?"
+     ],
+     "de": [
+      "Wie heißt du?",
+      "Wie heißen Sie?",
+      "Wie ist dein Name?",
+      "Wie ist Ihr Name?"
+     ]
+    },
+    {
+     "t": [
+      "Where is my book?"
+     ],
+     "de": [
+      "Wo ist mein Buch?"
+     ]
+    },
+    {
+     "t": [
+      "Who has a dog?"
+     ],
+     "de": [
+      "Wer hat einen Hund?"
+     ]
+    },
+    {
+     "t": [
+      "Why does he work so much?"
+     ],
+     "de": [
+      "Warum arbeitet er so viel?"
+     ]
+    },
+    {
+     "t": [
+      "How much does the bread cost?",
+      "How much is the bread?"
+     ],
+     "de": [
+      "Wie viel kostet das Brot?",
+      "Was kostet das Brot?"
+     ]
+    },
+    {
+     "t": [
+      "When do we eat?"
+     ],
+     "de": [
+      "Wann essen wir?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "res",
+   "title": "Im Restaurant",
+   "icon": "🍽️",
+   "row": 10,
+   "level": "A2",
+   "color": "#ff86d0",
+   "words": [
+    [
+     "menu",
+     "Speisekarte"
+    ],
+    [
+     "waiter",
+     "Kellner"
+    ],
+    [
+     "bill",
+     "Rechnung"
+    ],
+    [
+     "table",
+     "Tisch"
+    ],
+    [
+     "soup",
+     "Suppe"
+    ],
+    [
+     "coffee",
+     "Kaffee"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "A table for two, please."
+     ],
+     "de": [
+      "Einen Tisch für zwei, bitte.",
+      "Ein Tisch für zwei, bitte."
+     ]
+    },
+    {
+     "t": [
+      "The menu, please."
+     ],
+     "de": [
+      "Die Speisekarte, bitte."
+     ]
+    },
+    {
+     "t": [
+      "I would like a soup.",
+      "I'd like a soup."
+     ],
+     "de": [
+      "Ich hätte gern eine Suppe.",
+      "Ich hätte gerne eine Suppe.",
+      "Ich möchte eine Suppe."
+     ]
+    },
+    {
+     "t": [
+      "The waiter brings the coffee."
+     ],
+     "de": [
+      "Der Kellner bringt den Kaffee."
+     ]
+    },
+    {
+     "t": [
+      "The bill, please.",
+      "The check, please."
+     ],
+     "de": [
+      "Die Rechnung, bitte."
+     ]
+    },
+    {
+     "t": [
+      "What do you recommend?"
+     ],
+     "de": [
+      "Was empfehlen Sie?",
+      "Was empfiehlst du?"
+     ]
+    },
+    {
+     "t": [
+      "The fish is very good here."
+     ],
+     "de": [
+      "Der Fisch ist hier sehr gut."
+     ]
+    },
+    {
+     "t": [
+      "I am vegetarian.",
+      "I'm vegetarian.",
+      "I am a vegetarian.",
+      "I'm a vegetarian."
+     ],
+     "de": [
+      "Ich bin Vegetarier.",
+      "Ich bin Vegetarierin."
+     ]
+    },
+    {
+     "t": [
+      "Can I pay by card?"
+     ],
+     "de": [
+      "Kann ich mit Karte zahlen?",
+      "Kann ich mit Karte bezahlen?"
+     ]
+    },
+    {
+     "t": [
+      "We would like to order.",
+      "We'd like to order."
+     ],
+     "de": [
+      "Wir möchten bestellen.",
+      "Wir würden gern bestellen.",
+      "Wir würden gerne bestellen."
+     ]
+    },
+    {
+     "t": [
+      "A glass of water, please."
+     ],
+     "de": [
+      "Ein Glas Wasser, bitte."
+     ]
+    },
+    {
+     "t": [
+      "The food is cold."
+     ],
+     "de": [
+      "Das Essen ist kalt."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fre",
+   "title": "Freizeit",
+   "icon": "⚽",
+   "row": 10,
+   "level": "A2",
+   "color": "#78c800",
+   "words": [
+    [
+     "music",
+     "Musik"
+    ],
+    [
+     "game",
+     "Spiel"
+    ],
+    [
+     "film",
+     "Film"
+    ],
+    [
+     "football",
+     "Fußball"
+    ],
+    [
+     "guitar",
+     "Gitarre"
+    ],
+    [
+     "weekend",
+     "Wochenende"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "I like music."
+     ],
+     "de": [
+      "Ich mag Musik."
+     ]
+    },
+    {
+     "t": [
+      "He plays football."
+     ],
+     "de": [
+      "Er spielt Fußball."
+     ]
+    },
+    {
+     "t": [
+      "We are watching a film tonight.",
+      "We're watching a film tonight.",
+      "We are watching a movie tonight.",
+      "We watch a film tonight."
+     ],
+     "de": [
+      "Wir schauen heute Abend einen Film.",
+      "Wir sehen heute Abend einen Film."
+     ]
+    },
+    {
+     "t": [
+      "She plays the guitar.",
+      "She plays guitar."
+     ],
+     "de": [
+      "Sie spielt Gitarre."
+     ]
+    },
+    {
+     "t": [
+      "What do you do on the weekend?",
+      "What do you do at the weekend?"
+     ],
+     "de": [
+      "Was machst du am Wochenende?",
+      "Was machen Sie am Wochenende?",
+      "Was macht ihr am Wochenende?"
+     ]
+    },
+    {
+     "t": [
+      "I often read in the evening."
+     ],
+     "de": [
+      "Ich lese oft am Abend.",
+      "Abends lese ich oft.",
+      "Ich lese abends oft."
+     ]
+    },
+    {
+     "t": [
+      "My brother likes to swim.",
+      "My brother likes swimming."
+     ],
+     "de": [
+      "Mein Bruder schwimmt gern.",
+      "Mein Bruder schwimmt gerne."
+     ]
+    },
+    {
+     "t": [
+      "The game is fun."
+     ],
+     "de": [
+      "Das Spiel macht Spaß."
+     ]
+    },
+    {
+     "t": [
+      "We go to the cinema on Saturday.",
+      "We are going to the cinema on Saturday."
+     ],
+     "de": [
+      "Wir gehen am Samstag ins Kino."
+     ]
+    },
+    {
+     "t": [
+      "Do you like to cook?",
+      "Do you like cooking?"
+     ],
+     "de": [
+      "Kochst du gern?",
+      "Kochst du gerne?",
+      "Kochen Sie gern?"
+     ]
+    },
+    {
+     "t": [
+      "I listen to music every day."
+     ],
+     "de": [
+      "Ich höre jeden Tag Musik."
+     ]
+    },
+    {
+     "t": [
+      "On the weekend we go hiking.",
+      "At the weekend we go hiking."
+     ],
+     "de": [
+      "Am Wochenende gehen wir wandern.",
+      "Am Wochenende wandern wir."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pst",
+   "title": "Vergangenheit",
+   "icon": "⏪",
+   "row": 11,
+   "level": "B1",
+   "color": "#1cb0f6",
+   "words": [
+    [
+     "was",
+     "war"
+    ],
+    [
+     "were",
+     "waren"
+    ],
+    [
+     "went",
+     "ging"
+    ],
+    [
+     "saw",
+     "sah"
+    ],
+    [
+     "ate",
+     "aß"
+    ],
+    [
+     "bought",
+     "kaufte"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Yesterday I was at home."
+     ],
+     "de": [
+      "Gestern war ich zu Hause.",
+      "Gestern war ich zuhause."
+     ]
+    },
+    {
+     "t": [
+      "We were in Paris last year."
+     ],
+     "de": [
+      "Wir waren letztes Jahr in Paris."
+     ]
+    },
+    {
+     "t": [
+      "She went to school."
+     ],
+     "de": [
+      "Sie ging zur Schule.",
+      "Sie ist zur Schule gegangen."
+     ]
+    },
+    {
+     "t": [
+      "I saw a film yesterday.",
+      "I saw a movie yesterday."
+     ],
+     "de": [
+      "Ich habe gestern einen Film gesehen.",
+      "Ich sah gestern einen Film."
+     ]
+    },
+    {
+     "t": [
+      "He ate an apple."
+     ],
+     "de": [
+      "Er aß einen Apfel.",
+      "Er hat einen Apfel gegessen."
+     ]
+    },
+    {
+     "t": [
+      "They bought a new car."
+     ],
+     "de": [
+      "Sie kauften ein neues Auto.",
+      "Sie haben ein neues Auto gekauft."
+     ]
+    },
+    {
+     "t": [
+      "Did you sleep well?"
+     ],
+     "de": [
+      "Hast du gut geschlafen?",
+      "Haben Sie gut geschlafen?",
+      "Habt ihr gut geschlafen?"
+     ]
+    },
+    {
+     "t": [
+      "I did not have time.",
+      "I didn't have time.",
+      "I had no time."
+     ],
+     "de": [
+      "Ich hatte keine Zeit."
+     ]
+    },
+    {
+     "t": [
+      "We worked a lot last week."
+     ],
+     "de": [
+      "Wir haben letzte Woche viel gearbeitet.",
+      "Wir arbeiteten letzte Woche viel."
+     ]
+    },
+    {
+     "t": [
+      "My mother cooked fish."
+     ],
+     "de": [
+      "Meine Mutter hat Fisch gekocht.",
+      "Meine Mutter kochte Fisch."
+     ]
+    },
+    {
+     "t": [
+      "The weather was bad on Monday."
+     ],
+     "de": [
+      "Am Montag war das Wetter schlecht.",
+      "Das Wetter war am Montag schlecht."
+     ]
+    },
+    {
+     "t": [
+      "When did you arrive?"
+     ],
+     "de": [
+      "Wann bist du angekommen?",
+      "Wann sind Sie angekommen?",
+      "Wann seid ihr angekommen?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fut",
+   "title": "Zukunft",
+   "icon": "⏩",
+   "row": 12,
+   "level": "B1",
+   "color": "#ce82ff",
+   "words": [
+    [
+     "next",
+     "nächste"
+    ],
+    [
+     "soon",
+     "bald"
+    ],
+    [
+     "later",
+     "später"
+    ],
+    [
+     "plan",
+     "Plan"
+    ],
+    [
+     "future",
+     "Zukunft"
+    ],
+    [
+     "travel",
+     "reisen"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "I will call you tomorrow.",
+      "I'll call you tomorrow."
+     ],
+     "de": [
+      "Ich rufe dich morgen an.",
+      "Ich werde dich morgen anrufen."
+     ]
+    },
+    {
+     "t": [
+      "We will travel next year.",
+      "We are going to travel next year.",
+      "We're going to travel next year."
+     ],
+     "de": [
+      "Wir werden nächstes Jahr reisen.",
+      "Nächstes Jahr reisen wir."
+     ]
+    },
+    {
+     "t": [
+      "She will be a doctor.",
+      "She'll be a doctor."
+     ],
+     "de": [
+      "Sie wird Ärztin.",
+      "Sie wird Ärztin sein."
+     ]
+    },
+    {
+     "t": [
+      "It will rain soon.",
+      "It'll rain soon.",
+      "It is going to rain soon."
+     ],
+     "de": [
+      "Es wird bald regnen."
+     ]
+    },
+    {
+     "t": [
+      "I am going to learn French.",
+      "I'm going to learn French.",
+      "I will learn French."
+     ],
+     "de": [
+      "Ich werde Französisch lernen."
+     ]
+    },
+    {
+     "t": [
+      "They will come later.",
+      "They'll come later."
+     ],
+     "de": [
+      "Sie kommen später.",
+      "Sie werden später kommen."
+     ]
+    },
+    {
+     "t": [
+      "What will you do next week?",
+      "What are you going to do next week?"
+     ],
+     "de": [
+      "Was wirst du nächste Woche machen?",
+      "Was machst du nächste Woche?"
+     ]
+    },
+    {
+     "t": [
+      "Next summer we will buy a house."
+     ],
+     "de": [
+      "Nächsten Sommer kaufen wir ein Haus.",
+      "Nächsten Sommer werden wir ein Haus kaufen."
+     ]
+    },
+    {
+     "t": [
+      "I will not forget you.",
+      "I won't forget you."
+     ],
+     "de": [
+      "Ich werde dich nicht vergessen."
+     ]
+    },
+    {
+     "t": [
+      "The train will arrive at eight.",
+      "The train will arrive at eight o'clock."
+     ],
+     "de": [
+      "Der Zug kommt um acht an.",
+      "Der Zug kommt um acht Uhr an.",
+      "Der Zug wird um acht Uhr ankommen."
+     ]
+    },
+    {
+     "t": [
+      "Do you have plans for the future?"
+     ],
+     "de": [
+      "Hast du Pläne für die Zukunft?",
+      "Haben Sie Pläne für die Zukunft?",
+      "Habt ihr Pläne für die Zukunft?"
+     ]
+    },
+    {
+     "t": [
+      "Soon everything will be better."
+     ],
+     "de": [
+      "Bald wird alles besser."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tra",
+   "title": "Reisen",
+   "icon": "✈️",
+   "row": 12,
+   "level": "B1",
+   "color": "#00cd9c",
+   "words": [
+    [
+     "ticket",
+     "Fahrkarte"
+    ],
+    [
+     "airport",
+     "Flughafen"
+    ],
+    [
+     "hotel",
+     "Hotel"
+    ],
+    [
+     "suitcase",
+     "Koffer"
+    ],
+    [
+     "passport",
+     "Reisepass"
+    ],
+    [
+     "train",
+     "Zug"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "I need a ticket to London."
+     ],
+     "de": [
+      "Ich brauche eine Fahrkarte nach London.",
+      "Ich brauche ein Ticket nach London."
+     ]
+    },
+    {
+     "t": [
+      "The plane leaves at nine."
+     ],
+     "de": [
+      "Das Flugzeug fliegt um neun ab.",
+      "Das Flugzeug startet um neun."
+     ]
+    },
+    {
+     "t": [
+      "Where is my passport?"
+     ],
+     "de": [
+      "Wo ist mein Reisepass?",
+      "Wo ist mein Pass?"
+     ]
+    },
+    {
+     "t": [
+      "We booked a room in the hotel.",
+      "We booked a room at the hotel."
+     ],
+     "de": [
+      "Wir haben ein Zimmer im Hotel gebucht."
+     ]
+    },
+    {
+     "t": [
+      "My suitcase is too heavy."
+     ],
+     "de": [
+      "Mein Koffer ist zu schwer."
+     ]
+    },
+    {
+     "t": [
+      "The train is late."
+     ],
+     "de": [
+      "Der Zug hat Verspätung."
+     ]
+    },
+    {
+     "t": [
+      "How do I get to the airport?"
+     ],
+     "de": [
+      "Wie komme ich zum Flughafen?"
+     ]
+    },
+    {
+     "t": [
+      "I would like to see the sea.",
+      "I'd like to see the sea."
+     ],
+     "de": [
+      "Ich möchte das Meer sehen.",
+      "Ich würde gern das Meer sehen."
+     ]
+    },
+    {
+     "t": [
+      "We travel by train because it is cheaper.",
+      "We travel by train because it's cheaper."
+     ],
+     "de": [
+      "Wir reisen mit dem Zug, weil es billiger ist.",
+      "Wir fahren mit dem Zug, weil es billiger ist."
+     ]
+    },
+    {
+     "t": [
+      "The hotel is near the beach."
+     ],
+     "de": [
+      "Das Hotel ist in der Nähe des Strandes.",
+      "Das Hotel liegt nahe am Strand.",
+      "Das Hotel ist nahe am Strand."
+     ]
+    },
+    {
+     "t": [
+      "Did you bring the map?"
+     ],
+     "de": [
+      "Hast du die Karte mitgebracht?",
+      "Haben Sie die Karte mitgebracht?",
+      "Habt ihr die Karte mitgebracht?"
+     ]
+    },
+    {
+     "t": [
+      "On holiday I sleep a lot."
+     ],
+     "de": [
+      "Im Urlaub schlafe ich viel."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wor",
+   "title": "Arbeit",
+   "icon": "💼",
+   "row": 13,
+   "level": "B1",
+   "color": "#2b70c9",
+   "words": [
+    [
+     "job",
+     "Job"
+    ],
+    [
+     "colleague",
+     "Kollege"
+    ],
+    [
+     "office",
+     "Büro"
+    ],
+    [
+     "meeting",
+     "Besprechung"
+    ],
+    [
+     "boss",
+     "Chef"
+    ],
+    [
+     "salary",
+     "Gehalt"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "I work in an office."
+     ],
+     "de": [
+      "Ich arbeite in einem Büro."
+     ]
+    },
+    {
+     "t": [
+      "My colleague is very friendly."
+     ],
+     "de": [
+      "Mein Kollege ist sehr freundlich.",
+      "Meine Kollegin ist sehr freundlich.",
+      "Mein Kollege ist sehr nett.",
+      "Meine Kollegin ist sehr nett."
+     ]
+    },
+    {
+     "t": [
+      "The meeting starts at ten."
+     ],
+     "de": [
+      "Die Besprechung beginnt um zehn.",
+      "Das Meeting beginnt um zehn.",
+      "Die Besprechung beginnt um zehn Uhr."
+     ]
+    },
+    {
+     "t": [
+      "My boss is on holiday."
+     ],
+     "de": [
+      "Mein Chef ist im Urlaub.",
+      "Meine Chefin ist im Urlaub."
+     ]
+    },
+    {
+     "t": [
+      "She is looking for a new job.",
+      "She's looking for a new job."
+     ],
+     "de": [
+      "Sie sucht einen neuen Job.",
+      "Sie sucht eine neue Stelle.",
+      "Sie sucht eine neue Arbeit."
+     ]
+    },
+    {
+     "t": [
+      "I have to work late today."
+     ],
+     "de": [
+      "Ich muss heute lange arbeiten.",
+      "Ich muss heute spät arbeiten."
+     ]
+    },
+    {
+     "t": [
+      "He works as a teacher."
+     ],
+     "de": [
+      "Er arbeitet als Lehrer."
+     ]
+    },
+    {
+     "t": [
+      "We have a lot of work this week."
+     ],
+     "de": [
+      "Wir haben diese Woche viel Arbeit."
+     ]
+    },
+    {
+     "t": [
+      "I think the plan is good."
+     ],
+     "de": [
+      "Ich finde den Plan gut.",
+      "Ich denke, der Plan ist gut.",
+      "Ich glaube, der Plan ist gut."
+     ]
+    },
+    {
+     "t": [
+      "In my opinion we need more time."
+     ],
+     "de": [
+      "Meiner Meinung nach brauchen wir mehr Zeit."
+     ]
+    },
+    {
+     "t": [
+      "Can you send me the email?",
+      "Can you send me the e-mail?"
+     ],
+     "de": [
+      "Kannst du mir die E-Mail schicken?",
+      "Können Sie mir die E-Mail schicken?",
+      "Kannst du mir die Mail schicken?"
+     ]
+    },
+    {
+     "t": [
+      "I am happy with my job.",
+      "I'm happy with my job."
+     ],
+     "de": [
+      "Ich bin mit meinem Job zufrieden.",
+      "Ich bin zufrieden mit meinem Job."
+     ]
+    }
+   ]
   }
  ],
  "gloss": {
@@ -1229,7 +2992,172 @@
   "from": "von",
   "home": "Zuhause",
   "in": "in",
-  "bye": "tschüss"
+  "bye": "tschüss",
+  "six": "sechs",
+  "seven": "sieben",
+  "eight": "acht",
+  "nine": "neun",
+  "fifty": "fünfzig",
+  "years": "Jahre",
+  "year": "Jahr",
+  "old": "alt",
+  "need": "brauchen",
+  "days": "Tage",
+  "day": "Tag",
+  "sisters": "Schwestern",
+  "eggs": "Eier",
+  "wears": "trägt",
+  "wear": "tragen",
+  "wearing": "(trägt gerade)",
+  "color": "Farbe",
+  "colour": "Farbe",
+  "car": "Auto",
+  "yellow": "gelb",
+  "like": "mögen / wie",
+  "likes": "mag",
+  "jacket": "Jacke",
+  "her": "ihr(e) / sie",
+  "time": "Zeit / Uhrzeit",
+  "o'clock": "Uhr",
+  "every": "jeden / jede",
+  "sunday": "Sonntag",
+  "saturday": "Samstag",
+  "coffee": "Kaffee",
+  "for": "für",
+  "on": "an / am",
+  "shining": "scheint",
+  "raining": "regnet",
+  "very": "sehr",
+  "summer": "Sommer",
+  "winter": "Winter",
+  "snows": "schneit",
+  "strong": "stark",
+  "weather": "Wetter",
+  "umbrella": "Regenschirm",
+  "because": "weil",
+  "spring": "Frühling",
+  "often": "oft",
+  "stay": "bleiben",
+  "when": "wann / wenn",
+  "will": "werden",
+  "warm": "warm",
+  "be": "sein",
+  "left": "links",
+  "right": "rechts",
+  "straight": "gerade",
+  "ahead": "voraus",
+  "go": "gehen",
+  "turn": "abbiegen / drehen",
+  "near": "in der Nähe",
+  "closed": "geschlossen",
+  "city": "Stadt",
+  "there": "dort / es gibt",
+  "bakery": "Bäckerei",
+  "here": "hier",
+  "museum": "Museum",
+  "next": "nächste / neben",
+  "park": "Park",
+  "take": "nehmen",
+  "bus": "Bus",
+  "far": "weit",
+  "hospital": "Krankenhaus",
+  "long": "lang",
+  "that": "das / jenes",
+  "eating": "(isst gerade)",
+  "live": "wohnen / leben",
+  "does": "(Hilfsverb)",
+  "come": "kommen",
+  "coming": "kommt",
+  "sad": "traurig",
+  "so": "so",
+  "much": "viel",
+  "cost": "kosten",
+  "would": "würde",
+  "i'd": "ich würde / ich hätte",
+  "brings": "bringt",
+  "check": "Rechnung",
+  "recommend": "empfehlen",
+  "good": "gut",
+  "vegetarian": "Vegetarier(in)",
+  "can": "können / kann",
+  "pay": "zahlen",
+  "by": "mit / per",
+  "card": "Karte",
+  "we'd": "wir würden",
+  "order": "bestellen",
+  "glass": "Glas",
+  "of": "von",
+  "food": "Essen",
+  "plays": "spielt",
+  "watching": "(schauen gerade)",
+  "movie": "Film",
+  "tonight": "heute Abend",
+  "evening": "Abend",
+  "swim": "schwimmen",
+  "swimming": "Schwimmen",
+  "fun": "Spaß",
+  "cinema": "Kino",
+  "cook": "kochen",
+  "cooking": "Kochen",
+  "listen": "hören / zuhören",
+  "hiking": "wandern",
+  "last": "letzte(s)",
+  "went": "ging",
+  "saw": "sah",
+  "ate": "aß",
+  "bought": "kauften",
+  "did": "(Hilfsverb, Vergangenheit)",
+  "sleep": "schlafen",
+  "well": "gut",
+  "didn't": "nicht (Vergangenheit)",
+  "had": "hatte",
+  "worked": "arbeiteten",
+  "cooked": "kochte",
+  "bad": "schlecht",
+  "arrive": "ankommen",
+  "paris": "Paris",
+  "call": "anrufen",
+  "i'll": "ich werde",
+  "going": "(werden / gehen)",
+  "she'll": "sie wird",
+  "doctor": "Arzt / Ärztin",
+  "it'll": "es wird",
+  "learn": "lernen",
+  "they'll": "sie werden",
+  "buy": "kaufen",
+  "forget": "vergessen",
+  "won't": "werde nicht",
+  "plans": "Pläne",
+  "everything": "alles",
+  "better": "besser",
+  "plane": "Flugzeug",
+  "leaves": "fliegt ab / fährt ab",
+  "booked": "gebucht",
+  "room": "Zimmer",
+  "too": "zu",
+  "heavy": "schwer",
+  "late": "spät / verspätet",
+  "get": "kommen / gelangen",
+  "sea": "Meer",
+  "cheaper": "billiger",
+  "beach": "Strand",
+  "bring": "mitbringen",
+  "map": "Karte",
+  "holiday": "Urlaub",
+  "london": "London",
+  "friendly": "freundlich",
+  "starts": "beginnt",
+  "looking": "(suchen)",
+  "teacher": "Lehrer(in)",
+  "think": "denken / finden",
+  "this": "diese(r/s)",
+  "opinion": "Meinung",
+  "more": "mehr",
+  "send": "schicken",
+  "email": "E-Mail",
+  "happy": "zufrieden / glücklich",
+  "as": "als",
+  "me": "mir / mich"
  },
  "glossDe": {
   "ich": "I",

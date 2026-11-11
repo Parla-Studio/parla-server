@@ -126,7 +126,7 @@ class ApiIntegrationTest {
     void editedCourseFileIsPickedUpWithoutRestart() throws Exception {
         String before = (String) call("GET", "/api/courses", null, null).json().get("hash");
         Path file = tmp.resolve("content/fr.json");
-        String text = Files.readString(file).replaceFirst("\"version\":\\s*1", "\"version\": 2");
+        String text = Files.readString(file).replaceFirst("\"version\":\\s*\\d+", "\"version\": 99");
         Files.writeString(file, text);
         Files.setLastModifiedTime(file, FileTime.fromMillis(System.currentTimeMillis() + 10_000));
         Thread.sleep(5_200); // reload check interval
@@ -146,20 +146,25 @@ class ApiIntegrationTest {
         String token = register("lerner");
         String today = LocalDate.now().toString();
         List<Object> events = List.of(
-                Map.of("id", "evt-000001", "type", "lesson", "course", "en", "skill", "g1", "lesson", 0, "xp", 13, "day", today, "at", System.currentTimeMillis()),
+                Map.of("id", "evt-000001", "type", "lesson", "course", "en", "skill", "g1", "lesson", 0, "xp", 13, "day", today,
+                        "at", System.currentTimeMillis(), "correct", 8, "total", 10),
                 Map.of("id", "evt-000002", "type", "lesson", "course", "en", "skill", "g1", "lesson", 1, "xp", 12, "day", today),
                 Map.of("id", "evt-000003", "type", "lesson", "course", "en", "skill", "g1", "lesson", 2, "xp", 11, "day", today),
                 Map.of("id", "evt-bad-001", "type", "lesson", "course", "en", "skill", "g1", "lesson", 99, "xp", 10, "day", today),
-                Map.of("id", "evt-bad-002", "type", "lesson", "course", "en", "skill", "g1", "lesson", 0, "xp", 999, "day", today));
+                Map.of("id", "evt-bad-002", "type", "lesson", "course", "en", "skill", "g1", "lesson", 0, "xp", 999, "day", today),
+                Map.of("id", "evt-bad-003", "type", "lesson", "course", "en", "skill", "g1", "lesson", 0, "xp", 10, "day", today,
+                        "correct", 5, "total", 3));
         Res r = call("POST", "/api/progress/events", Map.of("events", events), token);
         assertEquals(200, r.status(), r.raw().body());
         assertEquals(3L, r.json().get("applied"));
-        assertEquals(2, Json.arr(r.json(), "rejected").size());
+        assertEquals(3, Json.arr(r.json(), "rejected").size());
 
         Map<String, Object> g1 = Json.obj(Json.obj(Json.obj(Json.obj(r.json(), "progress"), "courses"), "en"), "g1");
         assertEquals(3L, g1.get("lessons"));
         assertEquals(1L, g1.get("reps"));
         assertTrue((Long) g1.get("lastPracticed") > 0);
+        assertEquals(0.8, ((Number) g1.get("accuracy")).doubleValue(), 1e-9);
+        assertEquals(10L, g1.get("answers"));
         assertEquals(36L, Json.obj(Json.obj(r.json(), "progress"), "xp").get(today));
 
         // Same upload again: nothing changes.
@@ -170,9 +175,13 @@ class ApiIntegrationTest {
 
         // Practice strengthens, reset clears the course.
         call("POST", "/api/progress/events", Map.of("events", List.of(
-                Map.of("id", "evt-000004", "type", "practice", "course", "en", "skills", List.of("g1"), "xp", 10, "day", today))), token);
+                Map.of("id", "evt-000004", "type", "practice", "course", "en", "skills", List.of("g1"), "xp", 10, "day", today,
+                        "correct", 10, "total", 10))), token);
         Map<String, Object> snap = call("GET", "/api/progress", null, token).json();
-        assertEquals(2L, Json.obj(Json.obj(Json.obj(snap, "courses"), "en"), "g1").get("reps"));
+        Map<String, Object> g1After = Json.obj(Json.obj(Json.obj(snap, "courses"), "en"), "g1");
+        assertEquals(2L, g1After.get("reps"));
+        assertEquals(0.87, ((Number) g1After.get("accuracy")).doubleValue(), 1e-9);
+        assertEquals(20L, g1After.get("answers"));
         call("POST", "/api/progress/events", Map.of("events", List.of(
                 Map.of("id", "evt-000005", "type", "reset", "course", "en"))), token);
         snap = call("GET", "/api/progress", null, token).json();

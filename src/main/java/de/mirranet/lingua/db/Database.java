@@ -18,12 +18,19 @@ import java.util.TreeMap;
  */
 public final class Database implements AutoCloseable {
 
-    private static final int SCHEMA_VERSION = 1;
+    private static final int SCHEMA_VERSION = 2;
 
     public record User(long id, String username, String passwordHash, long createdAt) {
     }
 
-    public record SkillProgress(int lessons, long lastPracticed, int reps) {
+    /**
+     * @param accuracy share of correct answers (0..1), weighted towards recent sessions
+     * @param answers  total number of graded answers seen for this skill
+     */
+    public record SkillProgress(int lessons, long lastPracticed, int reps, double accuracy, int answers) {
+        public SkillProgress(int lessons, long lastPracticed, int reps) {
+            this(lessons, lastPracticed, reps, 0, 0);
+        }
     }
 
     @FunctionalInterface
@@ -59,6 +66,23 @@ public final class Database implements AutoCloseable {
         if (current >= SCHEMA_VERSION) {
             return;
         }
+        if (current < 1) {
+            createInitialSchema();
+        }
+        if (current < 2) {
+            // v2: per-skill accuracy, used by the app to adapt exercise difficulty.
+            transaction(c -> {
+                try (Statement st = c.createStatement()) {
+                    st.execute("ALTER TABLE skill_progress ADD COLUMN accuracy REAL NOT NULL DEFAULT 0");
+                    st.execute("ALTER TABLE skill_progress ADD COLUMN answers INTEGER NOT NULL DEFAULT 0");
+                    st.execute("PRAGMA user_version = 2");
+                }
+                return null;
+            });
+        }
+    }
+
+    private void createInitialSchema() throws SQLException {
         transaction(c -> {
             try (Statement st = c.createStatement()) {
                 st.execute("""
@@ -100,7 +124,7 @@ public final class Database implements AutoCloseable {
                         CREATE TABLE IF NOT EXISTS settings (
                           user_id INTEGER PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
                           json TEXT NOT NULL)""");
-                st.execute("PRAGMA user_version = " + SCHEMA_VERSION);
+                st.execute("PRAGMA user_version = 1");
             }
             return null;
         });
@@ -256,12 +280,12 @@ public final class Database implements AutoCloseable {
     public synchronized Map<String, Map<String, SkillProgress>> progress(long userId) throws SQLException {
         Map<String, Map<String, SkillProgress>> out = new TreeMap<>();
         try (PreparedStatement ps = conn.prepareStatement(
-                "SELECT course, skill, lessons, last_practiced, reps FROM skill_progress WHERE user_id = ?")) {
+                "SELECT course, skill, lessons, last_practiced, reps, accuracy, answers FROM skill_progress WHERE user_id = ?")) {
             ps.setLong(1, userId);
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
                     out.computeIfAbsent(rs.getString(1), k -> new LinkedHashMap<>())
-                            .put(rs.getString(2), new SkillProgress(rs.getInt(3), rs.getLong(4), rs.getInt(5)));
+                            .put(rs.getString(2), new SkillProgress(rs.getInt(3), rs.getLong(4), rs.getInt(5), rs.getDouble(6), rs.getInt(7)));
                 }
             }
         }
@@ -295,27 +319,31 @@ public final class Database implements AutoCloseable {
 
     public static SkillProgress readSkill(Connection c, long userId, String course, String skill) throws SQLException {
         try (PreparedStatement ps = c.prepareStatement(
-                "SELECT lessons, last_practiced, reps FROM skill_progress WHERE user_id = ? AND course = ? AND skill = ?")) {
+                "SELECT lessons, last_practiced, reps, accuracy, answers FROM skill_progress WHERE user_id = ? AND course = ? AND skill = ?")) {
             ps.setLong(1, userId);
             ps.setString(2, course);
             ps.setString(3, skill);
             try (ResultSet rs = ps.executeQuery()) {
-                return rs.next() ? new SkillProgress(rs.getInt(1), rs.getLong(2), rs.getInt(3)) : null;
+                return rs.next() ? new SkillProgress(rs.getInt(1), rs.getLong(2), rs.getInt(3), rs.getDouble(4), rs.getInt(5)) : null;
             }
         }
     }
 
     public static void writeSkill(Connection c, long userId, String course, String skill, SkillProgress p) throws SQLException {
         try (PreparedStatement ps = c.prepareStatement("""
-                INSERT INTO skill_progress(user_id, course, skill, lessons, last_practiced, reps) VALUES (?,?,?,?,?,?)
+                INSERT INTO skill_progress(user_id, course, skill, lessons, last_practiced, reps, accuracy, answers)
+                VALUES (?,?,?,?,?,?,?,?)
                 ON CONFLICT(user_id, course, skill) DO UPDATE SET
-                  lessons = excluded.lessons, last_practiced = excluded.last_practiced, reps = excluded.reps""")) {
+                  lessons = excluded.lessons, last_practiced = excluded.last_practiced, reps = excluded.reps,
+                  accuracy = excluded.accuracy, answers = excluded.answers""")) {
             ps.setLong(1, userId);
             ps.setString(2, course);
             ps.setString(3, skill);
             ps.setInt(4, p.lessons());
             ps.setLong(5, p.lastPracticed());
             ps.setInt(6, p.reps());
+            ps.setDouble(7, p.accuracy());
+            ps.setInt(8, p.answers());
             ps.executeUpdate();
         }
     }

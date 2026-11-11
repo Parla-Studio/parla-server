@@ -27,6 +27,9 @@ public final class ProgressService {
 
     public static final int MAX_EVENTS_PER_REQUEST = 200;
     public static final int MAX_XP_PER_EVENT = 30;
+    public static final int MAX_ANSWERS_PER_EVENT = 100;
+    /** Weight of the newest session in the running accuracy (exponential moving average). */
+    public static final double ACCURACY_WEIGHT = 0.35;
     private static final Pattern EVENT_ID = Pattern.compile("[A-Za-z0-9_-]{8,64}");
 
     private final Database db;
@@ -84,6 +87,12 @@ public final class ProgressService {
             if (xp == null || xp < 0 || xp > MAX_XP_PER_EVENT) {
                 return "xp must be 0.." + MAX_XP_PER_EVENT;
             }
+            Long correct = Json.num(e, "correct"), total = Json.num(e, "total");
+            if (correct != null || total != null) {
+                if (correct == null || total == null || total < 0 || total > MAX_ANSWERS_PER_EVENT || correct < 0 || correct > total) {
+                    return "correct/total must satisfy 0 <= correct <= total <= " + MAX_ANSWERS_PER_EVENT;
+                }
+            }
             String day = Json.str(e, "day");
             try {
                 LocalDate d = LocalDate.parse(day == null ? "" : day);
@@ -135,6 +144,8 @@ public final class ProgressService {
         Course course = courses.get(courseId);
         long now = System.currentTimeMillis();
         long at = clamp(Json.num(e, "at"), now);
+        int correct = orZero(Json.num(e, "correct"));
+        int answered = orZero(Json.num(e, "total"));
 
         switch (type) {
             case "lesson" -> {
@@ -154,15 +165,17 @@ public final class ProgressService {
                 if (lessons >= total) {
                     last = Math.max(last, at);
                 }
-                Database.writeSkill(c, userId, courseId, skill, new SkillProgress(lessons, last, reps));
+                double[] acc = blend(p.accuracy(), p.answers(), correct, answered);
+                Database.writeSkill(c, userId, courseId, skill, new SkillProgress(lessons, last, reps, acc[0], (int) acc[1]));
             }
             case "practice" -> {
                 for (Object s : Json.arr(e, "skills")) {
                     String skill = (String) s;
                     SkillProgress p = Database.readSkill(c, userId, courseId, skill);
                     if (p != null) {
+                        double[] acc = blend(p.accuracy(), p.answers(), correct, answered);
                         Database.writeSkill(c, userId, courseId, skill,
-                                new SkillProgress(p.lessons(), Math.max(p.lastPracticed(), at), p.reps() + 1));
+                                new SkillProgress(p.lessons(), Math.max(p.lastPracticed(), at), p.reps() + 1, acc[0], (int) acc[1]));
                     }
                 }
             }
@@ -180,6 +193,25 @@ public final class ProgressService {
         if (xp > 0) {
             Database.addXp(c, userId, Json.str(e, "day"), xp);
         }
+    }
+
+    /**
+     * Running accuracy: the first session sets it, later sessions move it by {@link #ACCURACY_WEIGHT}.
+     * Must match ProgressLogic.blend in the app.
+     *
+     * @return {accuracy, answers}
+     */
+    public static double[] blend(double accuracy, int answers, int correct, int total) {
+        if (total <= 0) {
+            return new double[]{accuracy, answers};
+        }
+        double session = (double) correct / total;
+        double next = answers == 0 ? session : accuracy * (1 - ACCURACY_WEIGHT) + session * ACCURACY_WEIGHT;
+        return new double[]{next, Math.min(1_000_000, answers + total)};
+    }
+
+    private static int orZero(Long v) {
+        return v == null ? 0 : v.intValue();
     }
 
     private static long clamp(Long at, long now) {
@@ -200,7 +232,8 @@ public final class ProgressService {
             Map<String, Object> skills = new LinkedHashMap<>();
             for (var se : ce.getValue().entrySet()) {
                 SkillProgress p = se.getValue();
-                skills.put(se.getKey(), Map.of("lessons", p.lessons(), "lastPracticed", p.lastPracticed(), "reps", p.reps()));
+                skills.put(se.getKey(), Map.of("lessons", p.lessons(), "lastPracticed", p.lastPracticed(), "reps", p.reps(),
+                        "accuracy", Math.round(p.accuracy() * 1000) / 1000.0, "answers", p.answers()));
             }
             coursesOut.put(ce.getKey(), skills);
         }

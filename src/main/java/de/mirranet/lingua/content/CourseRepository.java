@@ -186,6 +186,10 @@ public final class CourseRepository {
                 throw new IllegalArgumentException("duplicate skill id '" + sid + "'");
             }
             req(Json.str(skill, "title"), where + ".title");
+            Object level = skill.get("level");
+            if (level != null && !(level instanceof String)) {
+                throw new IllegalArgumentException(where + ".level must be a string such as \"A2\"");
+            }
             if (Json.num(skill, "row") == null) {
                 throw new IllegalArgumentException(where + ".row is required");
             }
