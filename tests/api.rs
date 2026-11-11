@@ -4,7 +4,7 @@ use axum::body::Body;
 use axum::http::{Request, StatusCode};
 use axum::Router;
 use http_body_util::BodyExt;
-use mirra_lingua::{api, build_state, config::Config};
+use parla::{api, build_state, config::Config};
 use serde_json::{json, Value};
 use std::time::Duration;
 use tempfile::TempDir;
@@ -297,7 +297,7 @@ async fn misc_endpoints() {
     assert_eq!(nf.json["error"], "not_found");
 
     let root = s.get("/", None).await;
-    assert!(root.text.starts_with("MirraLingua server"));
+    assert!(root.text.starts_with("Parla server"));
 
     let bad = s.call("POST", "/api/auth/login", None, None, None).await;
     assert_eq!(bad.status, StatusCode::BAD_REQUEST);

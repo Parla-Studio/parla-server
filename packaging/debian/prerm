@@ -2,7 +2,7 @@
 set -e
 
 if [ "$1" = "remove" ] && [ -d /run/systemd/system ]; then
-    systemctl disable --now mirra-lingua.service >/dev/null || true
+    systemctl disable --now parla.service >/dev/null || true
 fi
 
 exit 0

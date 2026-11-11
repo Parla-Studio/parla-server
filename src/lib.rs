@@ -1,5 +1,5 @@
-//! MirraLingua server: accounts, course delivery with hot reload, and idempotent progress sync
-//! for the MirraLingua Android app.
+//! Parla server: accounts, course delivery with hot reload, and idempotent progress sync
+//! for the Parla Android app.
 
 pub mod api;
 pub mod auth;

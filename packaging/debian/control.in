@@ -1,4 +1,4 @@
-Package: mirra-lingua-server
+Package: parla-server
 Version: @VERSION@
 Architecture: @ARCH@
 Maintainer: Linzn <niklas.linz@mirranet.de>
@@ -7,11 +7,11 @@ Depends: @DEPENDS@, adduser
 Section: net
 Priority: optional
 Homepage: https://github.com/LinzN/mirra-lingua
-Description: Backend server for the MirraLingua language learning app
- Accounts, course delivery and progress sync for the MirraLingua Android
- app (English and French for German speakers, in the style of the early
- Duolingo). Course files are reloaded automatically when they change, so
- new lessons reach the app without an app update.
+Description: Backend server for the Parla language learning app
+ Accounts, course delivery and progress sync for the Parla Android
+ app (English and French for German speakers). Course files are reloaded
+ automatically when they change, so new lessons reach the app without an
+ app update.
  .
- Runs as the systemd service "mirra-lingua" on 127.0.0.1:8085; put a TLS
- reverse proxy in front of it. Data lives in /var/lib/mirra-lingua.
+ Runs as the systemd service "parla" on 127.0.0.1:8085; put a TLS
+ reverse proxy in front of it. Data lives in /var/lib/parla.

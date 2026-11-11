@@ -1,4 +1,4 @@
-//! Server configuration, read from a TOML file (default `mirra-lingua.toml` in the working directory).
+//! Server configuration, read from a TOML file (default `parla.toml` in the working directory).
 
 use anyhow::{Context, Result};
 use serde::Deserialize;
@@ -27,7 +27,7 @@ impl Default for Config {
         Self {
             bind: "127.0.0.1".into(),
             port: 8085,
-            database: "data/mirra-lingua.db".into(),
+            database: "data/parla.db".into(),
             content_dir: "content".into(),
             registration_open: true,
             session_days: 180,
@@ -36,14 +36,14 @@ impl Default for Config {
     }
 }
 
-pub const DEFAULT_FILE: &str = r#"# MirraLingua server configuration
+pub const DEFAULT_FILE: &str = r#"# Parla server configuration
 
 # Address and port to listen on. Keep 127.0.0.1 when running behind a reverse proxy (recommended, for TLS).
 bind = "127.0.0.1"
 port = 8085
 
 # SQLite database file (created automatically).
-database = "data/mirra-lingua.db"
+database = "data/parla.db"
 
 # Folder with course files (<id>.json). Changes are picked up automatically without a restart.
 # If the folder does not exist, it is created and filled with the courses built into the server.

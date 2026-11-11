@@ -2,23 +2,23 @@
 set -e
 
 if [ "$1" = "configure" ]; then
-    if ! getent passwd mirra-lingua >/dev/null; then
-        adduser --system --group --home /var/lib/mirra-lingua --no-create-home \
-            --gecos "MirraLingua server" mirra-lingua >/dev/null
+    if ! getent passwd parla >/dev/null; then
+        adduser --system --group --home /var/lib/parla --no-create-home \
+            --gecos "Parla server" parla >/dev/null
     fi
-    mkdir -p /var/lib/mirra-lingua
-    chown mirra-lingua:mirra-lingua /var/lib/mirra-lingua
-    chmod 0750 /var/lib/mirra-lingua
+    mkdir -p /var/lib/parla
+    chown parla:parla /var/lib/parla
+    chmod 0750 /var/lib/parla
     # The config is readable by the service, not by everyone.
-    chown root:mirra-lingua /etc/mirra-lingua/mirra-lingua.toml
-    chmod 0640 /etc/mirra-lingua/mirra-lingua.toml
+    chown root:parla /etc/parla/parla.toml
+    chmod 0640 /etc/parla/parla.toml
 
     if [ -d /run/systemd/system ]; then
         systemctl daemon-reload >/dev/null || true
         if [ -z "$2" ]; then
-            systemctl enable --now mirra-lingua.service >/dev/null || true
-        elif systemctl is-enabled --quiet mirra-lingua.service; then
-            systemctl restart mirra-lingua.service >/dev/null || true
+            systemctl enable --now parla.service >/dev/null || true
+        elif systemctl is-enabled --quiet parla.service; then
+            systemctl restart parla.service >/dev/null || true
         fi
     fi
 fi

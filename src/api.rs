@@ -251,7 +251,7 @@ async fn fallback(uri: Uri) -> Response {
     if uri.path().starts_with("/api/") || uri.path() == "/api" {
         ApiError::new(StatusCode::NOT_FOUND, "not_found", "Unbekannter Endpunkt.").into_response()
     } else {
-        ([(CONTENT_TYPE, "text/plain; charset=utf-8")], format!("MirraLingua server {VERSION}\n")).into_response()
+        ([(CONTENT_TYPE, "text/plain; charset=utf-8")], format!("Parla server {VERSION}\n")).into_response()
     }
 }
 

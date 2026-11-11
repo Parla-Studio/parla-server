@@ -1,5 +1,5 @@
 #!/bin/sh
-# Builds target/debian/mirra-lingua-server_<version>_<arch>.deb from the release binary.
+# Builds target/debian/parla-server_<version>_<arch>.deb from the release binary.
 # Needs dpkg-deb (any Debian/Ubuntu). Run from anywhere: packaging/build-deb.sh
 # Set SKIP_BUILD=1 to package an existing target/release binary without running cargo.
 set -e
@@ -9,7 +9,7 @@ SERVER=$(cd "$HERE/.." && pwd)
 cd "$SERVER"
 
 [ -n "$SKIP_BUILD" ] || cargo build --release --locked
-BIN="$SERVER/target/release/mirra-lingua-server"
+BIN="$SERVER/target/release/parla-server"
 [ -x "$BIN" ] || { echo "build-deb: $BIN not found" >&2; exit 1; }
 
 VERSION=$(sed -n 's/^version *= *"\(.*\)"/\1/p' Cargo.toml | head -n 1)
@@ -21,17 +21,17 @@ DEPENDS="libc6 (>= ${GLIBC_MIN:-2.31}), libgcc-s1"
 
 ROOT=$(mktemp -d)
 trap 'rm -rf "$ROOT"' EXIT
-PKG="$ROOT/mirra-lingua-server"
+PKG="$ROOT/parla-server"
 
-install -D -m 0755 "$BIN" "$PKG/usr/bin/mirra-lingua-server"
-install -D -m 0644 "$HERE/mirra-lingua.toml" "$PKG/etc/mirra-lingua/mirra-lingua.toml"
-install -D -m 0644 "$HERE/mirra-lingua.service" "$PKG/usr/lib/systemd/system/mirra-lingua.service"
-install -D -m 0644 "$SERVER/../README.md" "$PKG/usr/share/doc/mirra-lingua-server/README.md"
-install -D -m 0644 "$SERVER/../content/README.md" "$PKG/usr/share/doc/mirra-lingua-server/course-format.md"
-install -D -m 0644 "$SERVER/../deploy/nginx-lingua.conf" "$PKG/usr/share/doc/mirra-lingua-server/examples/nginx-lingua.conf"
-cat > "$PKG/usr/share/doc/mirra-lingua-server/copyright" <<COPYRIGHT
+install -D -m 0755 "$BIN" "$PKG/usr/bin/parla-server"
+install -D -m 0644 "$HERE/parla.toml" "$PKG/etc/parla/parla.toml"
+install -D -m 0644 "$HERE/parla.service" "$PKG/usr/lib/systemd/system/parla.service"
+install -D -m 0644 "$SERVER/../README.md" "$PKG/usr/share/doc/parla-server/README.md"
+install -D -m 0644 "$SERVER/../content/README.md" "$PKG/usr/share/doc/parla-server/course-format.md"
+install -D -m 0644 "$SERVER/../deploy/nginx-parla.conf" "$PKG/usr/share/doc/parla-server/examples/nginx-parla.conf"
+cat > "$PKG/usr/share/doc/parla-server/copyright" <<COPYRIGHT
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mirra-lingua
+Upstream-Name: parla
 Source: https://github.com/LinzN/mirra-lingua
 
 Files: *
@@ -50,6 +50,6 @@ done
 
 OUT="$SERVER/target/debian"
 mkdir -p "$OUT"
-DEB="$OUT/mirra-lingua-server_${VERSION}_${ARCH}.deb"
+DEB="$OUT/parla-server_${VERSION}_${ARCH}.deb"
 dpkg-deb --build --root-owner-group -Zxz "$PKG" "$DEB" >&2
 echo "$DEB"

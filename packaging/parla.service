@@ -1,14 +1,14 @@
 [Unit]
-Description=MirraLingua server (language learning app backend)
+Description=Parla server (language learning app backend)
 Documentation=https://github.com/LinzN/mirra-lingua
 After=network.target
 
 [Service]
-User=mirra-lingua
-Group=mirra-lingua
-ExecStart=/usr/bin/mirra-lingua-server /etc/mirra-lingua/mirra-lingua.toml
-WorkingDirectory=/var/lib/mirra-lingua
-StateDirectory=mirra-lingua
+User=parla
+Group=parla
+ExecStart=/usr/bin/parla-server /etc/parla/parla.toml
+WorkingDirectory=/var/lib/parla
+StateDirectory=parla
 StateDirectoryMode=0750
 Restart=on-failure
 RestartSec=5

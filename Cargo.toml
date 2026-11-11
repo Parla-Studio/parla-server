@@ -1,18 +1,18 @@
 [package]
-name = "mirra-lingua-server"
-version = "2.0.0"
+name = "parla-server"
+version = "2.1.0"
 edition = "2021"
 rust-version = "1.82"
-description = "Backend for the MirraLingua language learning app: accounts, course delivery and progress sync."
+description = "Backend for the Parla language learning app: accounts, course delivery and progress sync."
 license = "MIT"
 publish = false
 
 [lib]
-name = "mirra_lingua"
+name = "parla"
 path = "src/lib.rs"
 
 [[bin]]
-name = "mirra-lingua-server"
+name = "parla-server"
 path = "src/main.rs"
 
 [dependencies]

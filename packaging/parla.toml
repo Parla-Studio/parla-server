@@ -1,16 +1,16 @@
-# MirraLingua server configuration (installed by the Debian package).
-# After changes: sudo systemctl restart mirra-lingua
+# Parla server configuration (installed by the Debian package).
+# After changes: sudo systemctl restart parla
 
 # Address and port to listen on. Keep 127.0.0.1 when running behind a reverse proxy (recommended, for TLS).
 bind = "127.0.0.1"
 port = 8085
 
-# SQLite database file (created automatically). Back up /var/lib/mirra-lingua.
-database = "/var/lib/mirra-lingua/mirra-lingua.db"
+# SQLite database file (created automatically). Back up /var/lib/parla.
+database = "/var/lib/parla/parla.db"
 
 # Folder with course files (<id>.json). Changes are picked up automatically without a restart.
 # If the folder does not exist, it is created and filled with the courses built into the server.
-content_dir = "/var/lib/mirra-lingua/content"
+content_dir = "/var/lib/parla/content"
 
 # Allow new accounts to be created from the app.
 registration_open = true

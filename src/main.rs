@@ -1,7 +1,7 @@
-//! `mirra-lingua-server [config.toml]` – starts the HTTP server.
+//! `parla-server [config.toml]` – starts the HTTP server.
 
 use anyhow::Context;
-use mirra_lingua::{api, build_state, config::Config, CONTENT_CHECK_INTERVAL};
+use parla::{api, build_state, config::Config, CONTENT_CHECK_INTERVAL};
 use std::net::SocketAddr;
 use std::path::PathBuf;
 use std::time::Duration;
@@ -16,7 +16,7 @@ async fn main() -> anyhow::Result<()> {
         .with_ansi(std::io::IsTerminal::is_terminal(&std::io::stdout()))
         .init();
 
-    let config_path = PathBuf::from(std::env::args().nth(1).unwrap_or_else(|| "mirra-lingua.toml".into()));
+    let config_path = PathBuf::from(std::env::args().nth(1).unwrap_or_else(|| "parla.toml".into()));
     let config = Config::load(&config_path)?;
     let addr: SocketAddr = format!("{}:{}", config.bind, config.port).parse().context("invalid bind address/port")?;
 
@@ -44,7 +44,7 @@ async fn main() -> anyhow::Result<()> {
     });
 
     let listener = tokio::net::TcpListener::bind(addr).await.with_context(|| format!("cannot listen on {addr}"))?;
-    tracing::info!("MirraLingua server {} listening on {addr}", api::VERSION);
+    tracing::info!("Parla server {} listening on {addr}", api::VERSION);
     axum::serve(listener, api::router(state).into_make_service_with_connect_info::<SocketAddr>())
         .with_graceful_shutdown(shutdown_signal())
         .await?;
