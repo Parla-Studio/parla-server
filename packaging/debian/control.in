@@ -6,7 +6,7 @@ Installed-Size: @SIZE@
 Depends: @DEPENDS@, adduser
 Section: net
 Priority: optional
-Homepage: https://github.com/LinzN/mirra-lingua
+Homepage: https://github.com/LinzN/parla
 Description: Backend server for the Parla language learning app
  Accounts, course delivery and progress sync for the Parla Android
  app (English and French for German speakers). Course files are reloaded
