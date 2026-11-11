@@ -1,0 +1,26 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "configure" ]; then
+    if ! getent passwd mirra-lingua >/dev/null; then
+        adduser --system --group --home /var/lib/mirra-lingua --no-create-home \
+            --gecos "MirraLingua server" mirra-lingua >/dev/null
+    fi
+    mkdir -p /var/lib/mirra-lingua
+    chown mirra-lingua:mirra-lingua /var/lib/mirra-lingua
+    chmod 0750 /var/lib/mirra-lingua
+    # The config is readable by the service, not by everyone.
+    chown root:mirra-lingua /etc/mirra-lingua/mirra-lingua.toml
+    chmod 0640 /etc/mirra-lingua/mirra-lingua.toml
+
+    if [ -d /run/systemd/system ]; then
+        systemctl daemon-reload >/dev/null || true
+        if [ -z "$2" ]; then
+            systemctl enable --now mirra-lingua.service >/dev/null || true
+        elif systemctl is-enabled --quiet mirra-lingua.service; then
+            systemctl restart mirra-lingua.service >/dev/null || true
+        fi
+    fi
+fi
+
+exit 0

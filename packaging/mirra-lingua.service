@@ -1,0 +1,30 @@
+[Unit]
+Description=MirraLingua server (language learning app backend)
+Documentation=https://github.com/LinzN/mirra-lingua
+After=network.target
+
+[Service]
+User=mirra-lingua
+Group=mirra-lingua
+ExecStart=/usr/bin/mirra-lingua-server /etc/mirra-lingua/mirra-lingua.toml
+WorkingDirectory=/var/lib/mirra-lingua
+StateDirectory=mirra-lingua
+StateDirectoryMode=0750
+Restart=on-failure
+RestartSec=5
+
+# Hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target
