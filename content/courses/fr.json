@@ -1,0 +1,1283 @@
+{
+ "id": "fr",
+ "version": 1,
+ "name": "Französisch",
+ "flag": "🇫🇷",
+ "tts": "fr-FR",
+ "chars": [
+  "é",
+  "è",
+  "ê",
+  "à",
+  "â",
+  "ç",
+  "ô",
+  "î",
+  "û",
+  "ù",
+  "ë",
+  "ï",
+  "œ"
+ ],
+ "keepCap": [],
+ "skills": [
+  {
+   "id": "g1",
+   "title": "Grundlagen 1",
+   "icon": "🥚",
+   "row": 0,
+   "color": "#1cb0f6",
+   "words": [
+    [
+     "homme",
+     "Mann"
+    ],
+    [
+     "femme",
+     "Frau"
+    ],
+    [
+     "garçon",
+     "Junge"
+    ],
+    [
+     "fille",
+     "Mädchen"
+    ],
+    [
+     "eau",
+     "Wasser"
+    ],
+    [
+     "pain",
+     "Brot"
+    ],
+    [
+     "pomme",
+     "Apfel"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Je suis un homme."
+     ],
+     "de": [
+      "Ich bin ein Mann."
+     ]
+    },
+    {
+     "t": [
+      "Je suis une femme."
+     ],
+     "de": [
+      "Ich bin eine Frau."
+     ]
+    },
+    {
+     "t": [
+      "C'est un garçon."
+     ],
+     "de": [
+      "Das ist ein Junge.",
+      "Er ist ein Junge.",
+      "Es ist ein Junge."
+     ]
+    },
+    {
+     "t": [
+      "C'est une fille."
+     ],
+     "de": [
+      "Das ist ein Mädchen.",
+      "Sie ist ein Mädchen.",
+      "Es ist ein Mädchen."
+     ]
+    },
+    {
+     "t": [
+      "Tu es un homme."
+     ],
+     "de": [
+      "Du bist ein Mann."
+     ]
+    },
+    {
+     "t": [
+      "Une pomme."
+     ],
+     "de": [
+      "Ein Apfel."
+     ]
+    },
+    {
+     "t": [
+      "Je bois de l'eau."
+     ],
+     "de": [
+      "Ich trinke Wasser."
+     ]
+    },
+    {
+     "t": [
+      "Je mange du pain."
+     ],
+     "de": [
+      "Ich esse Brot."
+     ]
+    },
+    {
+     "t": [
+      "Le garçon mange une pomme."
+     ],
+     "de": [
+      "Der Junge isst einen Apfel."
+     ]
+    },
+    {
+     "t": [
+      "La femme boit de l'eau."
+     ],
+     "de": [
+      "Die Frau trinkt Wasser."
+     ]
+    },
+    {
+     "t": [
+      "L'homme mange du pain."
+     ],
+     "de": [
+      "Der Mann isst Brot."
+     ]
+    },
+    {
+     "t": [
+      "Tu bois de l'eau."
+     ],
+     "de": [
+      "Du trinkst Wasser."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "g2",
+   "title": "Grundlagen 2",
+   "icon": "📖",
+   "row": 1,
+   "color": "#ce82ff",
+   "words": [
+    [
+     "lait",
+     "Milch"
+    ],
+    [
+     "livre",
+     "Buch"
+    ],
+    [
+     "lettre",
+     "Brief"
+    ],
+    [
+     "et",
+     "und"
+    ],
+    [
+     "nous",
+     "wir"
+    ],
+    [
+     "ils",
+     "sie"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Je lis un livre."
+     ],
+     "de": [
+      "Ich lese ein Buch."
+     ]
+    },
+    {
+     "t": [
+      "Elle lit une lettre."
+     ],
+     "de": [
+      "Sie liest einen Brief."
+     ]
+    },
+    {
+     "t": [
+      "Il boit du lait."
+     ],
+     "de": [
+      "Er trinkt Milch."
+     ]
+    },
+    {
+     "t": [
+      "L'homme et la femme."
+     ],
+     "de": [
+      "Der Mann und die Frau."
+     ]
+    },
+    {
+     "t": [
+      "Le garçon lit un livre."
+     ],
+     "de": [
+      "Der Junge liest ein Buch."
+     ]
+    },
+    {
+     "t": [
+      "Nous mangeons du pain."
+     ],
+     "de": [
+      "Wir essen Brot."
+     ]
+    },
+    {
+     "t": [
+      "Ils boivent du lait."
+     ],
+     "de": [
+      "Sie trinken Milch."
+     ]
+    },
+    {
+     "t": [
+      "Tu lis une lettre."
+     ],
+     "de": [
+      "Du liest einen Brief."
+     ]
+    },
+    {
+     "t": [
+      "Je bois du lait et de l'eau."
+     ],
+     "de": [
+      "Ich trinke Milch und Wasser."
+     ]
+    },
+    {
+     "t": [
+      "La femme lit."
+     ],
+     "de": [
+      "Die Frau liest."
+     ]
+    },
+    {
+     "t": [
+      "J'écris une lettre."
+     ],
+     "de": [
+      "Ich schreibe einen Brief."
+     ]
+    },
+    {
+     "t": [
+      "Le garçon et la fille mangent."
+     ],
+     "de": [
+      "Der Junge und das Mädchen essen."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hi",
+   "title": "Begrüßungen",
+   "icon": "👋",
+   "row": 1,
+   "color": "#ff9600",
+   "words": [
+    [
+     "bonjour",
+     "hallo"
+    ],
+    [
+     "salut",
+     "hi"
+    ],
+    [
+     "merci",
+     "danke"
+    ],
+    [
+     "oui",
+     "ja"
+    ],
+    [
+     "non",
+     "nein"
+    ],
+    [
+     "demain",
+     "morgen"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Bonjour."
+     ],
+     "de": [
+      "Hallo.",
+      "Guten Tag.",
+      "Guten Morgen."
+     ]
+    },
+    {
+     "t": [
+      "Bonsoir."
+     ],
+     "de": [
+      "Guten Abend."
+     ]
+    },
+    {
+     "t": [
+      "Bonne nuit."
+     ],
+     "de": [
+      "Gute Nacht."
+     ]
+    },
+    {
+     "t": [
+      "Merci."
+     ],
+     "de": [
+      "Danke."
+     ]
+    },
+    {
+     "t": [
+      "S'il vous plaît.",
+      "S'il te plaît."
+     ],
+     "de": [
+      "Bitte."
+     ]
+    },
+    {
+     "t": [
+      "Au revoir."
+     ],
+     "de": [
+      "Auf Wiedersehen.",
+      "Tschüss."
+     ]
+    },
+    {
+     "t": [
+      "Oui, merci."
+     ],
+     "de": [
+      "Ja, danke."
+     ]
+    },
+    {
+     "t": [
+      "Non, merci."
+     ],
+     "de": [
+      "Nein, danke."
+     ]
+    },
+    {
+     "t": [
+      "Salut, ça va ?"
+     ],
+     "de": [
+      "Hallo, wie geht's?",
+      "Hallo, wie geht es dir?",
+      "Hi, wie geht's?"
+     ]
+    },
+    {
+     "t": [
+      "Je m'appelle Anne."
+     ],
+     "de": [
+      "Ich heiße Anne."
+     ]
+    },
+    {
+     "t": [
+      "Enchanté.",
+      "Enchantée."
+     ],
+     "de": [
+      "Freut mich.",
+      "Sehr erfreut."
+     ]
+    },
+    {
+     "t": [
+      "À demain."
+     ],
+     "de": [
+      "Bis morgen."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fo",
+   "title": "Essen",
+   "icon": "🍎",
+   "row": 2,
+   "color": "#ff4b4b",
+   "words": [
+    [
+     "fromage",
+     "Käse"
+    ],
+    [
+     "riz",
+     "Reis"
+    ],
+    [
+     "œuf",
+     "Ei"
+    ],
+    [
+     "poisson",
+     "Fisch"
+    ],
+    [
+     "viande",
+     "Fleisch"
+    ],
+    [
+     "orange",
+     "Orange"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Je mange du fromage."
+     ],
+     "de": [
+      "Ich esse Käse."
+     ]
+    },
+    {
+     "t": [
+      "Elle mange du riz."
+     ],
+     "de": [
+      "Sie isst Reis."
+     ]
+    },
+    {
+     "t": [
+      "Le garçon mange un œuf."
+     ],
+     "de": [
+      "Der Junge isst ein Ei."
+     ]
+    },
+    {
+     "t": [
+      "Nous mangeons du poisson."
+     ],
+     "de": [
+      "Wir essen Fisch."
+     ]
+    },
+    {
+     "t": [
+      "Je ne mange pas de viande."
+     ],
+     "de": [
+      "Ich esse kein Fleisch."
+     ]
+    },
+    {
+     "t": [
+      "La fille mange une orange."
+     ],
+     "de": [
+      "Das Mädchen isst eine Orange."
+     ]
+    },
+    {
+     "t": [
+      "Le pain et le fromage."
+     ],
+     "de": [
+      "Das Brot und der Käse."
+     ]
+    },
+    {
+     "t": [
+      "Ils mangent du riz avec du poisson."
+     ],
+     "de": [
+      "Sie essen Reis mit Fisch."
+     ]
+    },
+    {
+     "t": [
+      "Tu manges de la viande."
+     ],
+     "de": [
+      "Du isst Fleisch."
+     ]
+    },
+    {
+     "t": [
+      "C'est un œuf."
+     ],
+     "de": [
+      "Das ist ein Ei.",
+      "Es ist ein Ei."
+     ]
+    },
+    {
+     "t": [
+      "Je mange du pain avec du fromage."
+     ],
+     "de": [
+      "Ich esse Brot mit Käse."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "an",
+   "title": "Tiere",
+   "icon": "🐶",
+   "row": 2,
+   "color": "#78c800",
+   "words": [
+    [
+     "chien",
+     "Hund"
+    ],
+    [
+     "chat",
+     "Katze"
+    ],
+    [
+     "cheval",
+     "Pferd"
+    ],
+    [
+     "oiseau",
+     "Vogel"
+    ],
+    [
+     "canard",
+     "Ente"
+    ],
+    [
+     "souris",
+     "Maus"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Le chien."
+     ],
+     "de": [
+      "Der Hund."
+     ]
+    },
+    {
+     "t": [
+      "C'est un chat."
+     ],
+     "de": [
+      "Das ist eine Katze.",
+      "Es ist eine Katze.",
+      "Das ist ein Kater."
+     ]
+    },
+    {
+     "t": [
+      "Le chat boit du lait."
+     ],
+     "de": [
+      "Die Katze trinkt Milch.",
+      "Der Kater trinkt Milch."
+     ]
+    },
+    {
+     "t": [
+      "Le cheval mange une pomme."
+     ],
+     "de": [
+      "Das Pferd isst einen Apfel."
+     ]
+    },
+    {
+     "t": [
+      "L'oiseau boit de l'eau."
+     ],
+     "de": [
+      "Der Vogel trinkt Wasser."
+     ]
+    },
+    {
+     "t": [
+      "Le canard mange du pain."
+     ],
+     "de": [
+      "Die Ente isst Brot."
+     ]
+    },
+    {
+     "t": [
+      "La souris mange du fromage."
+     ],
+     "de": [
+      "Die Maus isst Käse."
+     ]
+    },
+    {
+     "t": [
+      "J'ai un chien."
+     ],
+     "de": [
+      "Ich habe einen Hund."
+     ]
+    },
+    {
+     "t": [
+      "Elle a un chat."
+     ],
+     "de": [
+      "Sie hat eine Katze.",
+      "Sie hat einen Kater."
+     ]
+    },
+    {
+     "t": [
+      "Le garçon a un cheval."
+     ],
+     "de": [
+      "Der Junge hat ein Pferd."
+     ]
+    },
+    {
+     "t": [
+      "Tu as un chien ?",
+      "As-tu un chien ?"
+     ],
+     "de": [
+      "Hast du einen Hund?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pl",
+   "title": "Plural",
+   "icon": "👥",
+   "row": 3,
+   "color": "#2b70c9",
+   "words": [
+    [
+     "hommes",
+     "Männer"
+    ],
+    [
+     "femmes",
+     "Frauen"
+    ],
+    [
+     "chiens",
+     "Hunde"
+    ],
+    [
+     "chats",
+     "Katzen"
+    ],
+    [
+     "livres",
+     "Bücher"
+    ],
+    [
+     "pommes",
+     "Äpfel"
+    ],
+    [
+     "enfants",
+     "Kinder"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Les hommes mangent."
+     ],
+     "de": [
+      "Die Männer essen."
+     ]
+    },
+    {
+     "t": [
+      "Les femmes boivent de l'eau."
+     ],
+     "de": [
+      "Die Frauen trinken Wasser."
+     ]
+    },
+    {
+     "t": [
+      "Les chiens mangent de la viande."
+     ],
+     "de": [
+      "Die Hunde essen Fleisch."
+     ]
+    },
+    {
+     "t": [
+      "Les chats boivent du lait."
+     ],
+     "de": [
+      "Die Katzen trinken Milch."
+     ]
+    },
+    {
+     "t": [
+      "Nous lisons des livres."
+     ],
+     "de": [
+      "Wir lesen Bücher."
+     ]
+    },
+    {
+     "t": [
+      "Les filles mangent des pommes."
+     ],
+     "de": [
+      "Die Mädchen essen Äpfel."
+     ]
+    },
+    {
+     "t": [
+      "Les enfants lisent."
+     ],
+     "de": [
+      "Die Kinder lesen."
+     ]
+    },
+    {
+     "t": [
+      "Ce sont des femmes."
+     ],
+     "de": [
+      "Das sind Frauen.",
+      "Sie sind Frauen."
+     ]
+    },
+    {
+     "t": [
+      "Nous sommes des hommes."
+     ],
+     "de": [
+      "Wir sind Männer."
+     ]
+    },
+    {
+     "t": [
+      "Nous avons deux chats."
+     ],
+     "de": [
+      "Wir haben zwei Katzen."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fa",
+   "title": "Familie",
+   "icon": "👪",
+   "row": 4,
+   "color": "#ff86d0",
+   "words": [
+    [
+     "mère",
+     "Mutter"
+    ],
+    [
+     "père",
+     "Vater"
+    ],
+    [
+     "frère",
+     "Bruder"
+    ],
+    [
+     "sœur",
+     "Schwester"
+    ],
+    [
+     "fils",
+     "Sohn"
+    ],
+    [
+     "parents",
+     "Eltern"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Ma mère."
+     ],
+     "de": [
+      "Meine Mutter."
+     ]
+    },
+    {
+     "t": [
+      "Ton père lit un livre."
+     ],
+     "de": [
+      "Dein Vater liest ein Buch."
+     ]
+    },
+    {
+     "t": [
+      "J'ai un frère."
+     ],
+     "de": [
+      "Ich habe einen Bruder."
+     ]
+    },
+    {
+     "t": [
+      "C'est ma sœur."
+     ],
+     "de": [
+      "Das ist meine Schwester.",
+      "Sie ist meine Schwester."
+     ]
+    },
+    {
+     "t": [
+      "Mon père mange du poisson."
+     ],
+     "de": [
+      "Mein Vater isst Fisch."
+     ]
+    },
+    {
+     "t": [
+      "Son fils a un chien."
+     ],
+     "de": [
+      "Sein Sohn hat einen Hund.",
+      "Ihr Sohn hat einen Hund."
+     ]
+    },
+    {
+     "t": [
+      "La fille boit du lait."
+     ],
+     "de": [
+      "Die Tochter trinkt Milch.",
+      "Das Mädchen trinkt Milch."
+     ]
+    },
+    {
+     "t": [
+      "Mes parents mangent du riz."
+     ],
+     "de": [
+      "Meine Eltern essen Reis."
+     ]
+    },
+    {
+     "t": [
+      "Tu as une sœur ?",
+      "As-tu une sœur ?"
+     ],
+     "de": [
+      "Hast du eine Schwester?"
+     ]
+    },
+    {
+     "t": [
+      "Ma mère et mon père."
+     ],
+     "de": [
+      "Meine Mutter und mein Vater."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ad",
+   "title": "Adjektive",
+   "icon": "🎨",
+   "row": 4,
+   "color": "#00cd9c",
+   "words": [
+    [
+     "grand",
+     "groß"
+    ],
+    [
+     "petit",
+     "klein"
+    ],
+    [
+     "rouge",
+     "rot"
+    ],
+    [
+     "nouveau",
+     "neu"
+    ],
+    [
+     "bon",
+     "gut"
+    ],
+    [
+     "rapide",
+     "schnell"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Le chien est grand."
+     ],
+     "de": [
+      "Der Hund ist groß."
+     ]
+    },
+    {
+     "t": [
+      "Le chat est petit."
+     ],
+     "de": [
+      "Die Katze ist klein.",
+      "Der Kater ist klein."
+     ]
+    },
+    {
+     "t": [
+      "La pomme est rouge."
+     ],
+     "de": [
+      "Der Apfel ist rot."
+     ]
+    },
+    {
+     "t": [
+      "J'ai un nouveau livre."
+     ],
+     "de": [
+      "Ich habe ein neues Buch."
+     ]
+    },
+    {
+     "t": [
+      "Le pain est bon."
+     ],
+     "de": [
+      "Das Brot ist gut."
+     ]
+    },
+    {
+     "t": [
+      "Le cheval est rapide."
+     ],
+     "de": [
+      "Das Pferd ist schnell."
+     ]
+    },
+    {
+     "t": [
+      "La maison est grande."
+     ],
+     "de": [
+      "Das Haus ist groß."
+     ]
+    },
+    {
+     "t": [
+      "Les chats sont petits."
+     ],
+     "de": [
+      "Die Katzen sind klein."
+     ]
+    },
+    {
+     "t": [
+      "Mon frère est grand."
+     ],
+     "de": [
+      "Mein Bruder ist groß."
+     ]
+    },
+    {
+     "t": [
+      "C'est un bon chien."
+     ],
+     "de": [
+      "Das ist ein guter Hund.",
+      "Es ist ein guter Hund."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vb",
+   "title": "Verben: Präsens",
+   "icon": "🏃",
+   "row": 5,
+   "color": "#ff9600",
+   "words": [
+    [
+     "parler",
+     "sprechen"
+    ],
+    [
+     "habiter",
+     "wohnen"
+    ],
+    [
+     "travailler",
+     "arbeiten"
+    ],
+    [
+     "cuisiner",
+     "kochen"
+    ],
+    [
+     "courir",
+     "rennen"
+    ],
+    [
+     "nager",
+     "schwimmen"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Je parle français."
+     ],
+     "de": [
+      "Ich spreche Französisch."
+     ]
+    },
+    {
+     "t": [
+      "Elle parle allemand."
+     ],
+     "de": [
+      "Sie spricht Deutsch."
+     ]
+    },
+    {
+     "t": [
+      "Nous habitons à Berlin."
+     ],
+     "de": [
+      "Wir wohnen in Berlin.",
+      "Wir leben in Berlin."
+     ]
+    },
+    {
+     "t": [
+      "Il travaille beaucoup."
+     ],
+     "de": [
+      "Er arbeitet viel."
+     ]
+    },
+    {
+     "t": [
+      "Ma mère cuisine du riz."
+     ],
+     "de": [
+      "Meine Mutter kocht Reis."
+     ]
+    },
+    {
+     "t": [
+      "Le chien court."
+     ],
+     "de": [
+      "Der Hund rennt.",
+      "Der Hund läuft."
+     ]
+    },
+    {
+     "t": [
+      "Les canards nagent."
+     ],
+     "de": [
+      "Die Enten schwimmen."
+     ]
+    },
+    {
+     "t": [
+      "Tu parles anglais ?",
+      "Parles-tu anglais ?"
+     ],
+     "de": [
+      "Sprichst du Englisch?"
+     ]
+    },
+    {
+     "t": [
+      "Je travaille à la maison."
+     ],
+     "de": [
+      "Ich arbeite zu Hause.",
+      "Ich arbeite von zu Hause.",
+      "Ich arbeite zuhause."
+     ]
+    },
+    {
+     "t": [
+      "Ils habitent en France."
+     ],
+     "de": [
+      "Sie wohnen in Frankreich.",
+      "Sie leben in Frankreich."
+     ]
+    }
+   ]
+  }
+ ],
+ "gloss": {
+  "je": "ich",
+  "j'ai": "ich habe",
+  "j'écris": "ich schreibe",
+  "suis": "bin",
+  "es": "bist",
+  "est": "ist",
+  "c'est": "das ist / es ist",
+  "un": "ein",
+  "une": "eine",
+  "le": "der / das",
+  "la": "die / das",
+  "l'homme": "der Mann",
+  "l'eau": "das Wasser",
+  "l'oiseau": "der Vogel",
+  "les": "die (Pl.)",
+  "de": "von / (Teilungsartikel)",
+  "du": "(etwas) / vom",
+  "des": "(unbest. Artikel Pl.)",
+  "tu": "du",
+  "il": "er",
+  "elle": "sie",
+  "nous": "wir",
+  "ils": "sie",
+  "elles": "sie (weibl.)",
+  "avec": "mit",
+  "ne": "nicht (ne … pas)",
+  "pas": "nicht",
+  "mange": "esse / isst",
+  "manges": "isst",
+  "mangeons": "essen",
+  "mangent": "essen",
+  "bois": "trinke / trinkst",
+  "boit": "trinkt",
+  "boivent": "trinken",
+  "lis": "lese / liest",
+  "lit": "liest",
+  "lisons": "lesen",
+  "lisent": "lesen",
+  "a": "hat",
+  "as": "hast",
+  "avons": "haben",
+  "sont": "sind",
+  "sommes": "sind",
+  "ce": "das",
+  "ma": "meine",
+  "mon": "mein",
+  "ton": "dein",
+  "son": "sein / ihr",
+  "mes": "meine",
+  "maison": "Haus",
+  "grande": "groß",
+  "petits": "klein",
+  "deux": "zwei",
+  "bonsoir": "guten Abend",
+  "bonne": "gute",
+  "nuit": "Nacht",
+  "s'il": "wenn es",
+  "vous": "Sie / euch",
+  "te": "dir",
+  "plaît": "gefällt",
+  "au": "auf",
+  "revoir": "Wiedersehen",
+  "ça": "das / es",
+  "va": "geht",
+  "m'appelle": "heiße",
+  "enchanté": "freut mich",
+  "enchantée": "freut mich",
+  "à": "in / zu / bis",
+  "parle": "spreche / spricht",
+  "parles": "sprichst",
+  "français": "Französisch",
+  "allemand": "Deutsch",
+  "anglais": "Englisch",
+  "habitons": "wohnen",
+  "habitent": "wohnen",
+  "travaille": "arbeite / arbeitet",
+  "beaucoup": "viel",
+  "cuisine": "kocht",
+  "court": "rennt",
+  "nagent": "schwimmen",
+  "filles": "Mädchen (Pl.)",
+  "canards": "Enten",
+  "en": "in",
+  "as-tu": "hast du",
+  "parles-tu": "sprichst du",
+  "fille": "Mädchen / Tochter"
+ },
+ "glossDe": {
+  "ich": "je",
+  "du": "tu",
+  "er": "il",
+  "sie": "elle / ils",
+  "wir": "nous",
+  "bin": "suis",
+  "bist": "es",
+  "ist": "est",
+  "sind": "sommes / sont",
+  "ein": "un",
+  "eine": "une",
+  "einen": "un / une",
+  "der": "le",
+  "die": "la / les",
+  "das": "le / la",
+  "und": "et",
+  "mit": "avec",
+  "kein": "ne … pas de",
+  "meine": "ma / mes",
+  "mein": "mon",
+  "dein": "ton",
+  "habe": "ai",
+  "hast": "as",
+  "hat": "a",
+  "esse": "mange",
+  "isst": "mange / manges",
+  "trinke": "bois",
+  "trinkt": "boit",
+  "lese": "lis",
+  "liest": "lit / lis"
+ }
+}

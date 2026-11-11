@@ -1,0 +1,1266 @@
+{
+ "id": "en",
+ "version": 1,
+ "name": "Englisch",
+ "flag": "🇬🇧",
+ "tts": "en-GB",
+ "chars": [],
+ "keepCap": [
+  "I",
+  "I'm"
+ ],
+ "skills": [
+  {
+   "id": "g1",
+   "title": "Grundlagen 1",
+   "icon": "🥚",
+   "row": 0,
+   "color": "#1cb0f6",
+   "words": [
+    [
+     "man",
+     "Mann"
+    ],
+    [
+     "woman",
+     "Frau"
+    ],
+    [
+     "boy",
+     "Junge"
+    ],
+    [
+     "girl",
+     "Mädchen"
+    ],
+    [
+     "water",
+     "Wasser"
+    ],
+    [
+     "bread",
+     "Brot"
+    ],
+    [
+     "apple",
+     "Apfel"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "I am a man.",
+      "I'm a man."
+     ],
+     "de": [
+      "Ich bin ein Mann."
+     ]
+    },
+    {
+     "t": [
+      "I am a woman.",
+      "I'm a woman."
+     ],
+     "de": [
+      "Ich bin eine Frau."
+     ]
+    },
+    {
+     "t": [
+      "He is a boy.",
+      "He's a boy."
+     ],
+     "de": [
+      "Er ist ein Junge."
+     ]
+    },
+    {
+     "t": [
+      "She is a girl.",
+      "She's a girl."
+     ],
+     "de": [
+      "Sie ist ein Mädchen."
+     ]
+    },
+    {
+     "t": [
+      "You are a man.",
+      "You're a man."
+     ],
+     "de": [
+      "Du bist ein Mann.",
+      "Sie sind ein Mann."
+     ]
+    },
+    {
+     "t": [
+      "An apple."
+     ],
+     "de": [
+      "Ein Apfel."
+     ]
+    },
+    {
+     "t": [
+      "I drink water."
+     ],
+     "de": [
+      "Ich trinke Wasser."
+     ]
+    },
+    {
+     "t": [
+      "I eat bread."
+     ],
+     "de": [
+      "Ich esse Brot."
+     ]
+    },
+    {
+     "t": [
+      "The boy eats an apple."
+     ],
+     "de": [
+      "Der Junge isst einen Apfel."
+     ]
+    },
+    {
+     "t": [
+      "The woman drinks water."
+     ],
+     "de": [
+      "Die Frau trinkt Wasser."
+     ]
+    },
+    {
+     "t": [
+      "The man eats bread."
+     ],
+     "de": [
+      "Der Mann isst Brot."
+     ]
+    },
+    {
+     "t": [
+      "You drink water."
+     ],
+     "de": [
+      "Du trinkst Wasser.",
+      "Ihr trinkt Wasser.",
+      "Sie trinken Wasser."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "g2",
+   "title": "Grundlagen 2",
+   "icon": "📖",
+   "row": 1,
+   "color": "#ce82ff",
+   "words": [
+    [
+     "milk",
+     "Milch"
+    ],
+    [
+     "book",
+     "Buch"
+    ],
+    [
+     "letter",
+     "Brief"
+    ],
+    [
+     "and",
+     "und"
+    ],
+    [
+     "we",
+     "wir"
+    ],
+    [
+     "they",
+     "sie"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "I read a book."
+     ],
+     "de": [
+      "Ich lese ein Buch."
+     ]
+    },
+    {
+     "t": [
+      "She reads a letter."
+     ],
+     "de": [
+      "Sie liest einen Brief."
+     ]
+    },
+    {
+     "t": [
+      "He drinks milk."
+     ],
+     "de": [
+      "Er trinkt Milch."
+     ]
+    },
+    {
+     "t": [
+      "The man and the woman."
+     ],
+     "de": [
+      "Der Mann und die Frau."
+     ]
+    },
+    {
+     "t": [
+      "The boy reads a book."
+     ],
+     "de": [
+      "Der Junge liest ein Buch."
+     ]
+    },
+    {
+     "t": [
+      "We eat bread."
+     ],
+     "de": [
+      "Wir essen Brot."
+     ]
+    },
+    {
+     "t": [
+      "They drink milk."
+     ],
+     "de": [
+      "Sie trinken Milch."
+     ]
+    },
+    {
+     "t": [
+      "You read a letter."
+     ],
+     "de": [
+      "Du liest einen Brief.",
+      "Ihr lest einen Brief.",
+      "Sie lesen einen Brief."
+     ]
+    },
+    {
+     "t": [
+      "I drink milk and water."
+     ],
+     "de": [
+      "Ich trinke Milch und Wasser."
+     ]
+    },
+    {
+     "t": [
+      "The woman reads."
+     ],
+     "de": [
+      "Die Frau liest."
+     ]
+    },
+    {
+     "t": [
+      "I write a letter."
+     ],
+     "de": [
+      "Ich schreibe einen Brief."
+     ]
+    },
+    {
+     "t": [
+      "The boy and the girl eat."
+     ],
+     "de": [
+      "Der Junge und das Mädchen essen."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hi",
+   "title": "Begrüßungen",
+   "icon": "👋",
+   "row": 1,
+   "color": "#ff9600",
+   "words": [
+    [
+     "hello",
+     "hallo"
+    ],
+    [
+     "goodbye",
+     "tschüss"
+    ],
+    [
+     "thanks",
+     "danke"
+    ],
+    [
+     "yes",
+     "ja"
+    ],
+    [
+     "no",
+     "nein"
+    ],
+    [
+     "tomorrow",
+     "morgen"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "Hello."
+     ],
+     "de": [
+      "Hallo."
+     ]
+    },
+    {
+     "t": [
+      "Good morning."
+     ],
+     "de": [
+      "Guten Morgen."
+     ]
+    },
+    {
+     "t": [
+      "Good night."
+     ],
+     "de": [
+      "Gute Nacht."
+     ]
+    },
+    {
+     "t": [
+      "Thank you.",
+      "Thanks."
+     ],
+     "de": [
+      "Danke.",
+      "Danke schön."
+     ]
+    },
+    {
+     "t": [
+      "Please."
+     ],
+     "de": [
+      "Bitte."
+     ]
+    },
+    {
+     "t": [
+      "Goodbye.",
+      "Bye."
+     ],
+     "de": [
+      "Tschüss.",
+      "Auf Wiedersehen."
+     ]
+    },
+    {
+     "t": [
+      "Yes, please."
+     ],
+     "de": [
+      "Ja, bitte."
+     ]
+    },
+    {
+     "t": [
+      "No, thank you.",
+      "No, thanks."
+     ],
+     "de": [
+      "Nein, danke."
+     ]
+    },
+    {
+     "t": [
+      "Hello, how are you?"
+     ],
+     "de": [
+      "Hallo, wie geht's?",
+      "Hallo, wie geht es dir?",
+      "Hallo, wie geht es Ihnen?"
+     ]
+    },
+    {
+     "t": [
+      "My name is Anna."
+     ],
+     "de": [
+      "Ich heiße Anna.",
+      "Mein Name ist Anna."
+     ]
+    },
+    {
+     "t": [
+      "Nice to meet you."
+     ],
+     "de": [
+      "Freut mich.",
+      "Schön, dich kennenzulernen.",
+      "Schön, Sie kennenzulernen."
+     ]
+    },
+    {
+     "t": [
+      "See you tomorrow."
+     ],
+     "de": [
+      "Bis morgen."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fo",
+   "title": "Essen",
+   "icon": "🍎",
+   "row": 2,
+   "color": "#ff4b4b",
+   "words": [
+    [
+     "cheese",
+     "Käse"
+    ],
+    [
+     "rice",
+     "Reis"
+    ],
+    [
+     "egg",
+     "Ei"
+    ],
+    [
+     "fish",
+     "Fisch"
+    ],
+    [
+     "meat",
+     "Fleisch"
+    ],
+    [
+     "orange",
+     "Orange"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "I eat cheese."
+     ],
+     "de": [
+      "Ich esse Käse."
+     ]
+    },
+    {
+     "t": [
+      "She eats rice."
+     ],
+     "de": [
+      "Sie isst Reis."
+     ]
+    },
+    {
+     "t": [
+      "The boy eats an egg."
+     ],
+     "de": [
+      "Der Junge isst ein Ei."
+     ]
+    },
+    {
+     "t": [
+      "We eat fish."
+     ],
+     "de": [
+      "Wir essen Fisch."
+     ]
+    },
+    {
+     "t": [
+      "I don't eat meat.",
+      "I do not eat meat."
+     ],
+     "de": [
+      "Ich esse kein Fleisch."
+     ]
+    },
+    {
+     "t": [
+      "The girl eats an orange."
+     ],
+     "de": [
+      "Das Mädchen isst eine Orange."
+     ]
+    },
+    {
+     "t": [
+      "The bread and the cheese."
+     ],
+     "de": [
+      "Das Brot und der Käse."
+     ]
+    },
+    {
+     "t": [
+      "They eat rice with fish."
+     ],
+     "de": [
+      "Sie essen Reis mit Fisch."
+     ]
+    },
+    {
+     "t": [
+      "You eat meat."
+     ],
+     "de": [
+      "Du isst Fleisch.",
+      "Ihr esst Fleisch.",
+      "Sie essen Fleisch."
+     ]
+    },
+    {
+     "t": [
+      "It is an egg.",
+      "It's an egg."
+     ],
+     "de": [
+      "Es ist ein Ei.",
+      "Das ist ein Ei."
+     ]
+    },
+    {
+     "t": [
+      "I eat bread with cheese."
+     ],
+     "de": [
+      "Ich esse Brot mit Käse."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "an",
+   "title": "Tiere",
+   "icon": "🐶",
+   "row": 2,
+   "color": "#78c800",
+   "words": [
+    [
+     "dog",
+     "Hund"
+    ],
+    [
+     "cat",
+     "Katze"
+    ],
+    [
+     "horse",
+     "Pferd"
+    ],
+    [
+     "bird",
+     "Vogel"
+    ],
+    [
+     "duck",
+     "Ente"
+    ],
+    [
+     "mouse",
+     "Maus"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "The dog."
+     ],
+     "de": [
+      "Der Hund."
+     ]
+    },
+    {
+     "t": [
+      "It is a cat.",
+      "It's a cat."
+     ],
+     "de": [
+      "Es ist eine Katze.",
+      "Das ist eine Katze."
+     ]
+    },
+    {
+     "t": [
+      "The cat drinks milk."
+     ],
+     "de": [
+      "Die Katze trinkt Milch."
+     ]
+    },
+    {
+     "t": [
+      "The horse eats an apple."
+     ],
+     "de": [
+      "Das Pferd isst einen Apfel."
+     ]
+    },
+    {
+     "t": [
+      "The bird drinks water."
+     ],
+     "de": [
+      "Der Vogel trinkt Wasser."
+     ]
+    },
+    {
+     "t": [
+      "The duck eats bread."
+     ],
+     "de": [
+      "Die Ente isst Brot."
+     ]
+    },
+    {
+     "t": [
+      "The mouse eats cheese."
+     ],
+     "de": [
+      "Die Maus isst Käse."
+     ]
+    },
+    {
+     "t": [
+      "I have a dog."
+     ],
+     "de": [
+      "Ich habe einen Hund."
+     ]
+    },
+    {
+     "t": [
+      "She has a cat."
+     ],
+     "de": [
+      "Sie hat eine Katze."
+     ]
+    },
+    {
+     "t": [
+      "The boy has a horse."
+     ],
+     "de": [
+      "Der Junge hat ein Pferd."
+     ]
+    },
+    {
+     "t": [
+      "Do you have a dog?"
+     ],
+     "de": [
+      "Hast du einen Hund?",
+      "Haben Sie einen Hund?",
+      "Habt ihr einen Hund?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pl",
+   "title": "Plural",
+   "icon": "👥",
+   "row": 3,
+   "color": "#2b70c9",
+   "words": [
+    [
+     "men",
+     "Männer"
+    ],
+    [
+     "women",
+     "Frauen"
+    ],
+    [
+     "dogs",
+     "Hunde"
+    ],
+    [
+     "cats",
+     "Katzen"
+    ],
+    [
+     "books",
+     "Bücher"
+    ],
+    [
+     "apples",
+     "Äpfel"
+    ],
+    [
+     "children",
+     "Kinder"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "The men eat."
+     ],
+     "de": [
+      "Die Männer essen."
+     ]
+    },
+    {
+     "t": [
+      "The women drink water."
+     ],
+     "de": [
+      "Die Frauen trinken Wasser."
+     ]
+    },
+    {
+     "t": [
+      "The dogs eat meat."
+     ],
+     "de": [
+      "Die Hunde essen Fleisch."
+     ]
+    },
+    {
+     "t": [
+      "The cats drink milk."
+     ],
+     "de": [
+      "Die Katzen trinken Milch."
+     ]
+    },
+    {
+     "t": [
+      "We read books."
+     ],
+     "de": [
+      "Wir lesen Bücher."
+     ]
+    },
+    {
+     "t": [
+      "The girls eat apples."
+     ],
+     "de": [
+      "Die Mädchen essen Äpfel."
+     ]
+    },
+    {
+     "t": [
+      "The children read."
+     ],
+     "de": [
+      "Die Kinder lesen."
+     ]
+    },
+    {
+     "t": [
+      "They are women.",
+      "They're women."
+     ],
+     "de": [
+      "Sie sind Frauen."
+     ]
+    },
+    {
+     "t": [
+      "We are men.",
+      "We're men."
+     ],
+     "de": [
+      "Wir sind Männer."
+     ]
+    },
+    {
+     "t": [
+      "We have two cats."
+     ],
+     "de": [
+      "Wir haben zwei Katzen."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fa",
+   "title": "Familie",
+   "icon": "👪",
+   "row": 4,
+   "color": "#ff86d0",
+   "words": [
+    [
+     "mother",
+     "Mutter"
+    ],
+    [
+     "father",
+     "Vater"
+    ],
+    [
+     "brother",
+     "Bruder"
+    ],
+    [
+     "sister",
+     "Schwester"
+    ],
+    [
+     "son",
+     "Sohn"
+    ],
+    [
+     "daughter",
+     "Tochter"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "My mother."
+     ],
+     "de": [
+      "Meine Mutter."
+     ]
+    },
+    {
+     "t": [
+      "Your father reads a book."
+     ],
+     "de": [
+      "Dein Vater liest ein Buch.",
+      "Ihr Vater liest ein Buch.",
+      "Euer Vater liest ein Buch."
+     ]
+    },
+    {
+     "t": [
+      "I have a brother."
+     ],
+     "de": [
+      "Ich habe einen Bruder."
+     ]
+    },
+    {
+     "t": [
+      "She is my sister.",
+      "She's my sister."
+     ],
+     "de": [
+      "Sie ist meine Schwester."
+     ]
+    },
+    {
+     "t": [
+      "My father eats fish."
+     ],
+     "de": [
+      "Mein Vater isst Fisch."
+     ]
+    },
+    {
+     "t": [
+      "His son has a dog."
+     ],
+     "de": [
+      "Sein Sohn hat einen Hund."
+     ]
+    },
+    {
+     "t": [
+      "The daughter drinks milk."
+     ],
+     "de": [
+      "Die Tochter trinkt Milch."
+     ]
+    },
+    {
+     "t": [
+      "My parents eat rice."
+     ],
+     "de": [
+      "Meine Eltern essen Reis."
+     ]
+    },
+    {
+     "t": [
+      "Do you have a sister?"
+     ],
+     "de": [
+      "Hast du eine Schwester?",
+      "Haben Sie eine Schwester?",
+      "Habt ihr eine Schwester?"
+     ]
+    },
+    {
+     "t": [
+      "My mother and my father."
+     ],
+     "de": [
+      "Meine Mutter und mein Vater."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ad",
+   "title": "Adjektive",
+   "icon": "🎨",
+   "row": 4,
+   "color": "#00cd9c",
+   "words": [
+    [
+     "big",
+     "groß"
+    ],
+    [
+     "small",
+     "klein"
+    ],
+    [
+     "red",
+     "rot"
+    ],
+    [
+     "new",
+     "neu"
+    ],
+    [
+     "good",
+     "gut"
+    ],
+    [
+     "fast",
+     "schnell"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "The dog is big."
+     ],
+     "de": [
+      "Der Hund ist groß."
+     ]
+    },
+    {
+     "t": [
+      "The cat is small."
+     ],
+     "de": [
+      "Die Katze ist klein."
+     ]
+    },
+    {
+     "t": [
+      "The apple is red."
+     ],
+     "de": [
+      "Der Apfel ist rot."
+     ]
+    },
+    {
+     "t": [
+      "I have a new book."
+     ],
+     "de": [
+      "Ich habe ein neues Buch."
+     ]
+    },
+    {
+     "t": [
+      "The bread is good."
+     ],
+     "de": [
+      "Das Brot ist gut."
+     ]
+    },
+    {
+     "t": [
+      "The horse is fast."
+     ],
+     "de": [
+      "Das Pferd ist schnell."
+     ]
+    },
+    {
+     "t": [
+      "The house is big."
+     ],
+     "de": [
+      "Das Haus ist groß."
+     ]
+    },
+    {
+     "t": [
+      "The cats are small."
+     ],
+     "de": [
+      "Die Katzen sind klein."
+     ]
+    },
+    {
+     "t": [
+      "My brother is tall."
+     ],
+     "de": [
+      "Mein Bruder ist groß."
+     ]
+    },
+    {
+     "t": [
+      "It is a good dog.",
+      "It's a good dog."
+     ],
+     "de": [
+      "Es ist ein guter Hund.",
+      "Das ist ein guter Hund."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vb",
+   "title": "Verben: Präsens",
+   "icon": "🏃",
+   "row": 5,
+   "color": "#ff9600",
+   "words": [
+    [
+     "speak",
+     "sprechen"
+    ],
+    [
+     "live",
+     "wohnen"
+    ],
+    [
+     "work",
+     "arbeiten"
+    ],
+    [
+     "cook",
+     "kochen"
+    ],
+    [
+     "run",
+     "rennen"
+    ],
+    [
+     "swim",
+     "schwimmen"
+    ]
+   ],
+   "sentences": [
+    {
+     "t": [
+      "I speak English."
+     ],
+     "de": [
+      "Ich spreche Englisch."
+     ]
+    },
+    {
+     "t": [
+      "She speaks German."
+     ],
+     "de": [
+      "Sie spricht Deutsch."
+     ]
+    },
+    {
+     "t": [
+      "We live in Berlin."
+     ],
+     "de": [
+      "Wir wohnen in Berlin.",
+      "Wir leben in Berlin."
+     ]
+    },
+    {
+     "t": [
+      "He works a lot."
+     ],
+     "de": [
+      "Er arbeitet viel."
+     ]
+    },
+    {
+     "t": [
+      "My mother cooks rice."
+     ],
+     "de": [
+      "Meine Mutter kocht Reis."
+     ]
+    },
+    {
+     "t": [
+      "The dog runs."
+     ],
+     "de": [
+      "Der Hund rennt.",
+      "Der Hund läuft."
+     ]
+    },
+    {
+     "t": [
+      "The ducks swim."
+     ],
+     "de": [
+      "Die Enten schwimmen."
+     ]
+    },
+    {
+     "t": [
+      "Do you speak French?"
+     ],
+     "de": [
+      "Sprichst du Französisch?",
+      "Sprechen Sie Französisch?",
+      "Sprecht ihr Französisch?"
+     ]
+    },
+    {
+     "t": [
+      "I work at home.",
+      "I work from home."
+     ],
+     "de": [
+      "Ich arbeite zu Hause.",
+      "Ich arbeite von zu Hause.",
+      "Ich arbeite zuhause."
+     ]
+    },
+    {
+     "t": [
+      "They live in England."
+     ],
+     "de": [
+      "Sie wohnen in England.",
+      "Sie leben in England."
+     ]
+    }
+   ]
+  }
+ ],
+ "gloss": {
+  "i": "ich",
+  "am": "bin",
+  "a": "ein / eine",
+  "an": "ein / eine",
+  "the": "der / die / das",
+  "is": "ist",
+  "are": "sind / bist",
+  "you": "du / Sie / ihr",
+  "he": "er",
+  "she": "sie",
+  "it": "es",
+  "we": "wir",
+  "they": "sie",
+  "with": "mit",
+  "my": "mein(e)",
+  "your": "dein(e) / Ihr(e)",
+  "his": "sein(e)",
+  "eat": "essen",
+  "eats": "isst",
+  "drink": "trinken",
+  "drinks": "trinkt",
+  "read": "lesen",
+  "reads": "liest",
+  "write": "schreiben",
+  "have": "haben",
+  "has": "hat",
+  "do": "(Hilfsverb „tun“)",
+  "don't": "nicht (Hilfsverb)",
+  "not": "nicht",
+  "i'm": "ich bin",
+  "he's": "er ist",
+  "she's": "sie ist",
+  "it's": "es ist",
+  "you're": "du bist",
+  "they're": "sie sind",
+  "we're": "wir sind",
+  "morning": "Morgen",
+  "night": "Nacht",
+  "thank": "danken",
+  "please": "bitte",
+  "how": "wie",
+  "name": "Name",
+  "nice": "schön / nett",
+  "to": "zu",
+  "meet": "treffen / kennenlernen",
+  "see": "sehen",
+  "two": "zwei",
+  "girls": "Mädchen (Pl.)",
+  "parents": "Eltern",
+  "house": "Haus",
+  "tall": "groß (Person)",
+  "english": "Englisch",
+  "german": "Deutsch",
+  "french": "Französisch",
+  "lot": "viel",
+  "works": "arbeitet",
+  "cooks": "kocht",
+  "runs": "rennt",
+  "ducks": "Enten",
+  "speaks": "spricht",
+  "at": "bei / an",
+  "from": "von",
+  "home": "Zuhause",
+  "in": "in",
+  "bye": "tschüss"
+ },
+ "glossDe": {
+  "ich": "I",
+  "du": "you",
+  "er": "he",
+  "sie": "she / they",
+  "wir": "we",
+  "bin": "am",
+  "bist": "are",
+  "ist": "is",
+  "sind": "are",
+  "ein": "a / an",
+  "eine": "a / an",
+  "einen": "a / an",
+  "der": "the",
+  "die": "the",
+  "das": "the",
+  "und": "and",
+  "mit": "with",
+  "kein": "no / not",
+  "meine": "my",
+  "mein": "my",
+  "dein": "your",
+  "habe": "have",
+  "hast": "have",
+  "hat": "has",
+  "esse": "eat",
+  "isst": "eat / eats",
+  "trinke": "drink",
+  "trinkt": "drinks",
+  "lese": "read",
+  "liest": "reads"
+ }
+}

@@ -1,0 +1,20 @@
+# /etc/systemd/system/mirra-lingua.service
+# Expects /opt/mirra-lingua/mirra-lingua-server.jar and a "lingua" system user owning /opt/mirra-lingua.
+[Unit]
+Description=MirraLingua server
+After=network.target
+
+[Service]
+User=lingua
+WorkingDirectory=/opt/mirra-lingua
+ExecStart=/usr/bin/java -Xmx256m -jar /opt/mirra-lingua/mirra-lingua-server.jar /opt/mirra-lingua/mirra-lingua.properties
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/mirra-lingua
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
