@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
+  <!-- Parla app icon: a tree with a speech-bubble notch, same shapes as the Android adaptive icon. -->
+  <rect x="6" y="6" width="96" height="96" rx="22" fill="#78C800"/>
+  <path fill="#8B5A2B" d="M50,58h8v20h-8z"/>
+  <path fill="#FFFFFF" d="M54,28a18,18 0,1 1,-0.01,0z"/>
+  <path fill="#FFFFFF" d="M40,60l-6,10l12,-5z"/>
+  <path fill="#58A700" d="M47,44h14v4h-14zM47,52h10v4h-10z"/>
+</svg>

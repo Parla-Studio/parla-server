@@ -1,8 +1,32 @@
-# Parla Server
+<p align="center">
+  <img src="docs/logo.svg" width="128" height="128" alt="Parla logo">
+</p>
 
-Backend for [Parla](https://github.com/Parla-Studio/parla), a calm, simple language learning app for Android:
-accounts, course delivery and progress sync. Written in Rust (axum, SQLite via rusqlite with bundled SQLite,
-Argon2id passwords). Ships as a single binary and as a Debian package.
+<h1 align="center">Parla Server</h1>
+
+<p align="center">
+  <b>Backend for <a href="https://github.com/Parla-Studio/parla">Parla</a></b>, a calm, simple language learning app.<br>
+  Accounts, course delivery and progress sync – one binary, one Debian package.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Rust-axum-8B5A2B?style=flat-square&logo=rust&logoColor=white" alt="Rust + axum">
+  <img src="https://img.shields.io/badge/SQLite-bundled-58A700?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/Debian-.deb-58A700?style=flat-square&logo=debian&logoColor=white" alt="Debian package">
+</p>
+
+<p align="center">
+  <a href="#build-and-run">Build and run</a> ·
+  <a href="#debian-package">Debian package</a> ·
+  <a href="#api">API</a> ·
+  <a href="#adding-or-changing-content">Content</a> ·
+  <a href="https://github.com/Parla-Studio/parla">App</a>
+</p>
+
+---
+
+The server serves the Parla apps on Android, Linux and Windows. Written in Rust (axum, SQLite via rusqlite with
+bundled SQLite, Argon2id passwords). Ships as a single binary and as a Debian package.
 
 ```
 parla-server/
