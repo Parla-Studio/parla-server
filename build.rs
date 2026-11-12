@@ -1,10 +1,10 @@
-//! Embeds every course file from ../content/courses into the binary, so a fresh install can seed
+//! Embeds every course file from content/courses into the binary, so a fresh install can seed
 //! its content directory without any extra files.
 
 use std::{env, fs, path::Path};
 
 fn main() {
-    let dir = Path::new(env!("CARGO_MANIFEST_DIR")).join("../content/courses");
+    let dir = Path::new(env!("CARGO_MANIFEST_DIR")).join("content/courses");
     println!("cargo:rerun-if-changed={}", dir.display());
 
     let mut entries = Vec::new();

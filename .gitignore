@@ -1,0 +1,7 @@
+/target/
+/data/
+/parla.toml
+/.build-env
+.idea/
+.vscode/
+.DS_Store

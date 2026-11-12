@@ -1,6 +1,6 @@
 [Unit]
 Description=Parla server (language learning app backend)
-Documentation=https://github.com/LinzN/parla
+Documentation=https://github.com/LinzN/parla-server
 After=network.target
 
 [Service]

@@ -26,13 +26,13 @@ PKG="$ROOT/parla-server"
 install -D -m 0755 "$BIN" "$PKG/usr/bin/parla-server"
 install -D -m 0644 "$HERE/parla.toml" "$PKG/etc/parla/parla.toml"
 install -D -m 0644 "$HERE/parla.service" "$PKG/usr/lib/systemd/system/parla.service"
-install -D -m 0644 "$SERVER/../README.md" "$PKG/usr/share/doc/parla-server/README.md"
-install -D -m 0644 "$SERVER/../content/README.md" "$PKG/usr/share/doc/parla-server/course-format.md"
-install -D -m 0644 "$SERVER/../deploy/nginx-parla.conf" "$PKG/usr/share/doc/parla-server/examples/nginx-parla.conf"
+install -D -m 0644 "$SERVER/README.md" "$PKG/usr/share/doc/parla-server/README.md"
+install -D -m 0644 "$SERVER/content/README.md" "$PKG/usr/share/doc/parla-server/course-format.md"
+install -D -m 0644 "$SERVER/deploy/nginx-parla.conf" "$PKG/usr/share/doc/parla-server/examples/nginx-parla.conf"
 cat > "$PKG/usr/share/doc/parla-server/copyright" <<COPYRIGHT
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: parla
-Source: https://github.com/LinzN/parla
+Source: https://github.com/LinzN/parla-server
 
 Files: *
 Copyright: $(date +%Y) Niklas Linz <niklas.linz@mirranet.de>
