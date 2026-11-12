@@ -1,6 +1,6 @@
 # Parla Server
 
-Backend for [Parla](https://github.com/LinzN/parla), a calm, simple language learning app for Android:
+Backend for [Parla](https://github.com/Parla-Studio/parla), a calm, simple language learning app for Android:
 accounts, course delivery and progress sync. Written in Rust (axum, SQLite via rusqlite with bundled SQLite,
 Argon2id passwords). Ships as a single binary and as a Debian package.
 

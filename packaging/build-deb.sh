@@ -32,7 +32,7 @@ install -D -m 0644 "$SERVER/deploy/nginx-parla.conf" "$PKG/usr/share/doc/parla-s
 cat > "$PKG/usr/share/doc/parla-server/copyright" <<COPYRIGHT
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: parla
-Source: https://github.com/LinzN/parla-server
+Source: https://github.com/Parla-Studio/parla-server
 
 Files: *
 Copyright: $(date +%Y) Niklas Linz <niklas.linz@mirranet.de>
