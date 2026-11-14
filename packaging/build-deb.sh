@@ -15,7 +15,14 @@ BIN="$SERVER/target/release/parla-server"
 [ -x "$BIN" ] || { echo "build-deb: $BIN not found" >&2; exit 1; }
 
 VERSION=${DEB_VERSION:-$(sed -n 's/^version *= *"\(.*\)"/\1/p' Cargo.toml | head -n 1)}
-ARCH=$(dpkg --print-architecture)
+# Debian architecture name; without dpkg (build machines that only have dpkg-deb) derived from uname.
+ARCH=$(dpkg --print-architecture 2>/dev/null || case "$(uname -m)" in
+    x86_64) echo amd64 ;;
+    aarch64) echo arm64 ;;
+    armv7l) echo armhf ;;
+    *) uname -m ;;
+esac)
+command -v dpkg-deb >/dev/null || { echo "build-deb: dpkg-deb is missing (sudo apt install dpkg)" >&2; exit 1; }
 
 # Runtime dependencies: SQLite is built in, so only glibc and libgcc remain.
 GLIBC_MIN=$(objdump -T "$BIN" 2>/dev/null | grep -o 'GLIBC_[0-9.]*' | sed 's/GLIBC_//' | sort -V | tail -n 1)
