@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="#build-and-run">Build and run</a> ·
-  <a href="#debian-package">Debian package</a> ·
+  <a href="#install-debian--ubuntu">Install</a> ·
   <a href="#api">API</a> ·
   <a href="#adding-or-changing-content">Content</a> ·
   <a href="https://github.com/Parla-Studio/parla">App</a>
@@ -68,14 +68,32 @@ built-in courses. Run from the repository root, it uses `content/` directly. Def
 `127.0.0.1:8085`, registration open, sessions expire after 180 days without use. `RUST_LOG=debug` gives more
 log output.
 
-## Debian package
+## Install (Debian / Ubuntu)
+
+Install from the MirraNET APT repository at `apt.mirranet.de` (Debian 12+, Ubuntu 22.04+). First import its signing
+key, then add the repository and install; every new build arrives with `sudo apt upgrade`:
+
+```bash
+# Signing key of the repository
+sudo install -d /etc/apt/keyrings
+sudo curl -fsSL https://apt.mirranet.de/mirranet.gpg -o /etc/apt/keyrings/mirranet.gpg
+
+# Repository and package
+echo "deb [signed-by=/etc/apt/keyrings/mirranet.gpg] https://apt.mirranet.de stable main" \
+    | sudo tee /etc/apt/sources.list.d/mirranet.list
+sudo apt update && sudo apt install parla-server
+```
+
+Without the repository, build the package yourself and install the file:
 
 ```bash
 packaging/build-deb.sh          # -> target/debian/parla-server_<version>_<arch>.deb
 sudo apt install ./target/debian/parla-server_*.deb
 ```
 
-Jenkins builds the package on every run. It installs:
+Jenkins builds the package on every run and, for builds of `main`, publishes it to the APT repository (Publish
+stage, see the `Jenkinsfile`). Each build gets its own package version, `<Cargo.toml version>+<UTC date and
+time>.git<commit>` (e.g. `0.4.0+202611142030.gitabc1234`), so apt sees it as an update. The package installs:
 
 | Path | What |
 |---|---|

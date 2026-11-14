@@ -2,6 +2,8 @@
 # Builds target/debian/parla-server_<version>_<arch>.deb from the release binary.
 # Needs dpkg-deb (any Debian/Ubuntu). Run from anywhere: packaging/build-deb.sh
 # Set SKIP_BUILD=1 to package an existing target/release binary without running cargo.
+# Set DEB_VERSION to give the package another version than Cargo.toml (Jenkins: one version per build,
+# e.g. 0.4.0+202611142030.gitabc1234, so apt sees every build as an update).
 set -e
 
 HERE=$(cd "$(dirname "$0")" && pwd)
@@ -12,7 +14,7 @@ cd "$SERVER"
 BIN="$SERVER/target/release/parla-server"
 [ -x "$BIN" ] || { echo "build-deb: $BIN not found" >&2; exit 1; }
 
-VERSION=$(sed -n 's/^version *= *"\(.*\)"/\1/p' Cargo.toml | head -n 1)
+VERSION=${DEB_VERSION:-$(sed -n 's/^version *= *"\(.*\)"/\1/p' Cargo.toml | head -n 1)}
 ARCH=$(dpkg --print-architecture)
 
 # Runtime dependencies: SQLite is built in, so only glibc and libgcc remain.
