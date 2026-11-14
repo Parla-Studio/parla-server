@@ -1,6 +1,6 @@
 #!/bin/sh
 # Builds target/debian/parla-server_<version>_<arch>.deb from the release binary.
-# Needs dpkg-deb (any Debian/Ubuntu). Run from anywhere: packaging/build-deb.sh
+# Needs dpkg-deb, or ar + tar + gzip when dpkg is not installed. Run from anywhere: packaging/build-deb.sh
 # Set SKIP_BUILD=1 to package an existing target/release binary without running cargo.
 # Set DEB_VERSION to give the package another version than Cargo.toml (Jenkins: one version per build,
 # e.g. 0.4.0+202611142030.gitabc1234, so apt sees every build as an update).
@@ -15,7 +15,7 @@ BIN="$SERVER/target/release/parla-server"
 [ -x "$BIN" ] || { echo "build-deb: $BIN not found" >&2; exit 1; }
 
 VERSION=${DEB_VERSION:-$(sed -n 's/^version *= *"\(.*\)"/\1/p' Cargo.toml | head -n 1)}
-# Debian architecture name; without dpkg (build machines that only have dpkg-deb) derived from uname.
+# Debian architecture name; without dpkg derived from uname.
 deb_arch() {
     if command -v dpkg >/dev/null 2>&1; then
         dpkg --print-architecture
@@ -29,7 +29,25 @@ deb_arch() {
     esac
 }
 ARCH=$(deb_arch)
-command -v dpkg-deb >/dev/null || { echo "build-deb: dpkg-deb is missing (sudo apt install dpkg)" >&2; exit 1; }
+
+# Builds the .deb from a package tree with DEBIAN/ inside. Uses dpkg-deb when it is there; otherwise builds the
+# same archive by hand (a .deb is an ar archive of debian-binary, control.tar.gz and data.tar.gz), so build
+# machines without dpkg only need ar (binutils), tar and gzip.
+build_deb() { # <package tree> <output .deb>
+    if command -v dpkg-deb >/dev/null 2>&1; then
+        dpkg-deb --build --root-owner-group -Zxz "$1" "$2" >&2
+        return
+    fi
+    command -v ar >/dev/null 2>&1 || { echo "build-deb: neither dpkg-deb nor ar found (install dpkg or binutils)" >&2; exit 1; }
+    parts=$(mktemp -d)
+    echo "2.0" > "$parts/debian-binary"
+    (cd "$1/DEBIAN" && tar --owner=0 --group=0 --numeric-owner -czf "$parts/control.tar.gz" .)
+    (cd "$1" && tar --owner=0 --group=0 --numeric-owner --exclude=./DEBIAN -czf "$parts/data.tar.gz" .)
+    rm -f "$2"
+    (cd "$parts" && ar rc "$2" debian-binary control.tar.gz data.tar.gz)
+    rm -rf "$parts"
+    echo "build-deb: built $2 without dpkg-deb" >&2
+}
 
 # Runtime dependencies: SQLite is built in, so only glibc and libgcc remain.
 GLIBC_MIN=$(objdump -T "$BIN" 2>/dev/null | grep -o 'GLIBC_[0-9.]*' | sed 's/GLIBC_//' | sort -V | tail -n 1)
@@ -67,5 +85,5 @@ done
 OUT="$SERVER/target/debian"
 mkdir -p "$OUT"
 DEB="$OUT/parla-server_${VERSION}_${ARCH}.deb"
-dpkg-deb --build --root-owner-group -Zxz "$PKG" "$DEB" >&2
+build_deb "$PKG" "$DEB"
 echo "$DEB"
