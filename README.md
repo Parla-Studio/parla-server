@@ -91,9 +91,8 @@ packaging/build-deb.sh          # -> target/debian/parla-server_<version>_<arch>
 sudo apt install ./target/debian/parla-server_*.deb
 ```
 
-Jenkins builds the package on every run and, for builds of `main`, publishes it to the APT repository (Publish
-stage, see the `Jenkinsfile`). Each build gets its own package version, `<Cargo.toml version>+<UTC date and
-time>.git<commit>` (e.g. `0.4.0+202611142030.gitabc1234`), so apt sees it as an update. The package installs:
+New versions reach the APT repository with a release (see [Releases](#releases)); Jenkins builds a test package on
+every push. The package installs:
 
 | Path | What |
 |---|---|
@@ -108,6 +107,20 @@ The service runs as the system user `parla` on `127.0.0.1:8085`. Logs: `journalc
 
 Put a TLS reverse proxy in front of it – see [`deploy/nginx-parla.conf`](deploy/nginx-parla.conf)
 (also installed to `/usr/share/doc/parla-server/examples/`).
+
+## Releases
+
+Releases are made in GitHub: **Actions › Release › Run workflow**, enter the version (`X.Y.Z`; empty = the current
+version if not released yet, otherwise the next patch version). The workflow sets the version in `Cargo.toml`
+(`scripts/release.sh`), commits, tags `vX.Y.Z` and starts the *Build* workflow for the tag, which
+
+- tests and builds the Debian package on Ubuntu 22.04 (Debian 12+, Ubuntu 22.04+),
+- publishes a GitHub release with the `.deb`,
+- uploads the `.deb` to the MirraNET APT repository (`apt` job: `packaging/apt/publish.sh` runs `reprepro` on the
+  repository server over SSH).
+
+The `apt` job needs the secrets `APT_HOST`, `APT_PORT`, `APT_REPO`, `APT_SSH_KEY` and `APT_KNOWN_HOSTS` (organization
+secrets of Parla-Studio); without them it is skipped.
 
 ## API
 

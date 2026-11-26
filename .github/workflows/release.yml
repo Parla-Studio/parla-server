@@ -1,0 +1,68 @@
+name: Release
+
+# One click in GitHub (Actions › Release › Run workflow): sets the version,
+# commits and tags it, then starts the build that publishes the GitHub
+# release with the packages.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version X.Y.Z (empty: current version if not released yet, else next patch version)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency: release
+
+jobs:
+  tag:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Choose version
+        id: version
+        run: |
+          current=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -n1)
+          version="${{ inputs.version }}"
+          if [ -z "$version" ]; then
+            if git rev-parse -q --verify "refs/tags/v$current" >/dev/null; then
+              IFS=. read -r major minor patch <<<"$current"
+              version="$major.$minor.$((patch + 1))"
+            else
+              version="$current"
+            fi
+          fi
+          [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "::error::Version must be X.Y.Z, got '$version'"; exit 1; }
+          if git rev-parse -q --verify "refs/tags/v$version" >/dev/null; then echo "::error::v$version already exists"; exit 1; fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "current=$current" >> "$GITHUB_OUTPUT"
+      - name: Set version, commit and tag
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+          CURRENT: ${{ steps.version.outputs.current }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ "$VERSION" = "$CURRENT" ]; then
+            git tag -a "v$VERSION" -m "Parla Server $VERSION"
+            git push origin "v$VERSION"
+          else
+            scripts/release.sh "$VERSION"
+            git push origin HEAD:main "v$VERSION"
+          fi
+      - name: Build and publish
+        # Tags pushed with the workflow token don't trigger workflows, so the
+        # build is started explicitly for the tag.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run build.yml --ref "v${{ steps.version.outputs.version }}"
+          echo "### Parla Server ${{ steps.version.outputs.version }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Tagged v${{ steps.version.outputs.version }}; the *Build* workflow builds and publishes the release." >> "$GITHUB_STEP_SUMMARY"

@@ -2,8 +2,7 @@
 # Builds target/debian/parla-server_<version>_<arch>.deb from the release binary.
 # Needs dpkg-deb, or ar + tar + gzip when dpkg is not installed. Run from anywhere: packaging/build-deb.sh
 # Set SKIP_BUILD=1 to package an existing target/release binary without running cargo.
-# Set DEB_VERSION to give the package another version than Cargo.toml (Jenkins: one version per build,
-# e.g. 0.4.0+202611142030.gitabc1234, so apt sees every build as an update).
+# Set DEB_VERSION to give the package another version than Cargo.toml.
 set -e
 
 HERE=$(cd "$(dirname "$0")" && pwd)
