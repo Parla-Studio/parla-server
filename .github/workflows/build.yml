@@ -35,6 +35,33 @@ jobs:
           name: parla-server-x86_64
           path: dist/*
 
+  content:
+    # Copies the course files to the server after a push to main; the server picks them up within seconds.
+    # Skipped when the secrets are not configured.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - name: Publish course files
+        env:
+          CONTENT_TARGET: ${{ secrets.CONTENT_TARGET }}
+          CONTENT_PORT: ${{ secrets.CONTENT_PORT }}
+          CONTENT_SSH_KEY: ${{ secrets.CONTENT_SSH_KEY }}
+          CONTENT_KNOWN_HOSTS: ${{ secrets.CONTENT_KNOWN_HOSTS }}
+        run: |
+          if [ -z "${CONTENT_TARGET:-}" ]; then
+            echo "::notice::Content deploy secrets not set; skipping content publish."
+            exit 0
+          fi
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$CONTENT_SSH_KEY" > ~/.ssh/id_content
+          chmod 600 ~/.ssh/id_content
+          printf '%s\n' "$CONTENT_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          rsync -av --delay-updates \
+            -e "ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$HOME/.ssh/known_hosts -p ${CONTENT_PORT:-22} -i $HOME/.ssh/id_content" \
+            content/courses/*.json "$CONTENT_TARGET"
+
   release:
     if: startsWith(github.ref, 'refs/tags/v')
     needs: package

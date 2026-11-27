@@ -35,8 +35,8 @@ parla-server/
 ├── tests/             End-to-end tests against a real SQLite database
 ├── packaging/         Debian package (build-deb.sh, systemd unit, default config)
 ├── deploy/            nginx example
-├── scripts/           setup-rust.sh for build machines
-└── Jenkinsfile        Tests, builds the binary and the .deb, optionally publishes course files
+├── scripts/           setup-rust.sh for build machines, release.sh
+└── .github/workflows/ Build (tests, .deb, course files, GitHub release, APT) and Release
 ```
 
 ## How it fits together
@@ -91,8 +91,8 @@ packaging/build-deb.sh          # -> target/debian/parla-server_<version>_<arch>
 sudo apt install ./target/debian/parla-server_*.deb
 ```
 
-New versions reach the APT repository with a release (see [Releases](#releases)); Jenkins builds a test package on
-every push. The package installs:
+New versions reach the APT repository with a release (see [Releases](#releases)); GitHub Actions builds a test package
+on every push. The package installs:
 
 | Path | What |
 |---|---|
@@ -153,7 +153,9 @@ Course files live in the server's content folder (`content_dir`, `/var/lib/parla
 server checks for changes every few seconds; an invalid file is logged and ignored while the previous version
 stays online, and a deleted file removes the course. The built-in courses are only copied into an *empty*
 content folder, so a package upgrade never overwrites your course files – copy new `content/courses/*.json` to
-the server, or let the Jenkins "Publish content" stage do it (set `PARLA_CONTENT_TARGET`).
+the server, or let the `content` job of the Build workflow do it on every push to `main`. It needs the secrets
+`CONTENT_TARGET` (rsync target, e.g. `parla@mirranet.de:/var/lib/parla/content/`), `CONTENT_SSH_KEY`,
+`CONTENT_KNOWN_HOSTS` and optionally `CONTENT_PORT`; without them it is skipped.
 See [`content/README.md`](content/README.md) for the format.
 
 ## Tests
